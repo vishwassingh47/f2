@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="ffffffff" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+	<com.estrongs.android.pop.app.editor.ObservableScrollView android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<com.estrongs.android.pop.app.editor.ReaderTextView android:textSize="24dp" android:textColor="ff000" android:id="false" android:paddingLeft="5dp" android:paddingRight="5dp" android:scrollbars="0" android:layout_width="-1" android:layout_height="-2" />
+	</com.estrongs.android.pop.app.editor.ObservableScrollView>
+	<com.estrongs.android.pop.app.editor.ObservableScrollView android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+		<EditText android:textSize="24dp" android:textColor="ff000" android:id="false" android:background="resourceId:0x106000d" android:paddingLeft="5dp" android:paddingRight="5dp" android:scrollbars="0" android:layout_width="-1" android:layout_height="-2" android:maxLength="1000000" />
+	</com.estrongs.android.pop.app.editor.ObservableScrollView>
+	<LinearLayout android:layout_gravity="80" android:id="false" android:background="af5f5f5f" android:layout_width="-1" android:layout_height="72dp">
+		<SeekBar android:layout_gravity="16" android:id="false" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="-2" android:maxHeight="30dp" android:progressDrawable="res/drawable/seekbar_progress.xml" android:minHeight="30dp" android:thumb="res/drawable/seekbar_thumb_selector.xml" android:thumbOffset="0dp" android:layout_weight="{4:1065353216}" style="?android:attr/progressBarStyleHorizontal" />
+		<TextView android:textAppearance="{2:16842818}" android:gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-1" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:minWidth="40dp" android:text="0%" android:singleLine="true" />
+	</LinearLayout>
+	<com.estrongs.android.pop.esclasses.ESScrollMenuView android:layout_gravity="5" android:id="false" android:background="res/drawable-hdpi-v4/toolbar_edit_more_bg.9.png" android:padding="8dp" android:visibility="1" android:layout_width="-2" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+	</com.estrongs.android.pop.esclasses.ESScrollMenuView>
+	<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:background="afffffff" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+		<ProgressBar android:id="resourceId:0x102000d" android:layout_width="-2" android:layout_height="-2" style="@style/ProgressBar" />
+		<TextView android:textAppearance="{2:16842818}" android:id="false" android:paddingTop="4dp" android:layout_width="-2" android:layout_height="-2" android:text="Loading…" android:singleLine="true" />
+	</LinearLayout>
+</FrameLayout>

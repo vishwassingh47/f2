@@ -1,0 +1,198 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <!--layer1-->
+    <include layout="@layout/layoutof_layer1"/>
+
+    <!--border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        >
+    </LinearLayout>
+
+    <!--layer 2-->
+    <LinearLayout
+        android:id="@+id/layer2_storagePager"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="vertical"
+        android:background="#90a4ae"
+        android:gravity="right"
+        >
+
+        <HorizontalScrollView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/scroller_storagePager"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbHorizontal="@color/white"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/horiLinearLayout_storagePager"
+                >
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+    <!--border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        >
+    </LinearLayout>
+    <!--layer 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#90a4ae"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/stackLinearLayout_storagePager"
+        >
+
+    </LinearLayout>
+
+    <!--Horizontal Views        layer 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/storages_layer2"
+        >
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/storages_storage1"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#000000"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/storages_storage2"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#ffcdd2"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/storages_storage3"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#bbdefb"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/storages_storage4"
+            android:src="@mipmap/google_drive"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/storages_storage5"
+            android:src="@mipmap/dropbox"
+            android:visibility="gone"
+            />
+
+
+
+    </LinearLayout>
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_storagePager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false"
+        />
+
+    <ListView
+        android:id="@+id/list_storagePager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:background="#fafafa"
+        android:visibility="gone"
+        />
+
+    <!--art layout-->
+    <include layout="@layout/layoutof_art_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/storagePager_loading"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading Files......"
+            android:textStyle="bold"
+            />
+        <ProgressBar
+            android:gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/storagePager_progress"
+            android:max="100"
+            android:indeterminateOnly="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </LinearLayout>
+
+</LinearLayout>

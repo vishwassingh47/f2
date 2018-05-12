@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<FrameLayout android:id="false" android:paddingLeft="70dp" android:paddingTop="12dp" android:paddingRight="70dp" android:paddingBottom="12dp" android:layout_width="-2" android:layout_height="-1">
+		<ImageView android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		<ProgressBar android:layout_gravity="17" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:indeterminate="true" android:indeterminateDrawable="res/drawable/progress_drawable.xml" style="?android:attr/progressBarStyleSmall" />
+	</FrameLayout>
+</merge>

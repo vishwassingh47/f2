@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/directory_layout"
+    android:layout_width="150dp"
+    android:layout_height="25dp">
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="2dp"
+        android:layout_height="25dp"
+        android:id="@+id/directory_border"
+        >
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/directory_icon"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/directory_name"
+        />
+
+</LinearLayout>

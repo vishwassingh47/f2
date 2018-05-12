@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="15dp" android:layout_width="-1" android:layout_height="-1">
+	<TableRow android:id="false" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="15dp" android:layout_marginBottom="6dp">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="21" android:id="false" android:padding="3dp" android:layout_marginRight="3dp" android:text="Size" />
+		<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="{4:1065353216}">
+			<Button android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="19" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:singleLine="true" />
+		</LinearLayout>
+	</TableRow>
+	<TableRow android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="15dp" android:layout_marginBottom="30dp">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="21" android:id="false" android:padding="3dp" android:layout_marginRight="3dp" android:text="Date" />
+		<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="{4:1065353216}">
+			<Button android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="19" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:singleLine="true" />
+		</LinearLayout>
+	</TableRow>
+</TableLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-1" android:cacheColorHint="0000" android:groupIndicator="res/drawable-hdpi-v4/blank.png" android:childIndicator="res/drawable-hdpi-v4/blank.png" android:divider="ffffffff" />

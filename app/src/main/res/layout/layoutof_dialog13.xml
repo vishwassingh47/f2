@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <!--top heading -->
+    <TextView
+        android:background="@color/main_theme_red"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Reboot"
+        android:gravity="center"
+        android:layout_margin="2dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/dialog13_title"
+        />
+
+    <!--Border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:id="@+id/dialog13_message"
+        android:text="HERE IS ANY GERNER AL MEAASGE "
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="12dp"
+            android:id="@+id/dialog13_cancel"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ok"
+            android:textSize="12dp"
+            android:id="@+id/dialog13_ok"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

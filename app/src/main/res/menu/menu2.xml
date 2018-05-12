@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu2_how_many_selected"
+        app:showAsAction="always"
+        android:title="0 Selected"
+        android:orderInCategory="0"
+        />
+
+    <item
+        android:id="@+id/menu2_overflow"
+        android:icon="@drawable/more_icon"
+        android:orderInCategory="1"
+        android:title="overflow"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/menu2_delete"
+                android:title="Delete"
+                android:icon="@drawable/my_icon_delete"
+                android:orderInCategory="2"
+                app:showAsAction="always|withText"
+                />
+
+            <item
+                android:id="@+id/menu2_uninstall"
+                android:title="UnInstall"
+                android:icon="@drawable/my_icon_delete"
+                android:orderInCategory="2"
+                app:showAsAction="always|withText"
+                />
+            <item
+                android:id="@+id/menu2_uninstallInBackground"
+                android:title="UnInstall In Background"
+                android:icon="@drawable/my_icon_delete"
+                android:orderInCategory="2"
+                app:showAsAction="always|withText"
+                />
+
+            <item
+                android:id="@+id/menu2_installInBackground"
+                android:title="Install In Background"
+                android:icon="@drawable/back"
+                android:orderInCategory="2"
+                app:showAsAction="always|withText"
+                />
+            <item
+                android:id="@+id/menu2_copy"
+                android:title="Copy"
+                app:showAsAction="always|withText"
+                android:orderInCategory="2"
+                android:icon="@drawable/ic_menu_copy"
+                />
+
+            <item
+                android:id="@+id/menu2_cut"
+                android:title="Cut"
+                app:showAsAction="always|withText"
+                android:orderInCategory="2"
+                android:icon="@drawable/ic_menu_cut"
+                />
+            <item
+                android:id="@+id/menu2_rename"
+                android:icon="@mipmap/delete1"
+                android:orderInCategory="2"
+                android:title="Rename"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_clear_default"
+                android:icon="@mipmap/delete1"
+                android:orderInCategory="2"
+                android:title="Clear Defaults"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_backupApk"
+                android:icon="@mipmap/refresh"
+                android:orderInCategory="2"
+                android:title="BackUp Apk"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_select_all"
+                android:icon="@mipmap/select_all"
+                android:orderInCategory="2"
+                android:title="Select all"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_select_none"
+                android:icon="@mipmap/select_none"
+                android:orderInCategory="2"
+                android:title="Select None"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_wifi"
+                android:icon="@mipmap/wifishare"
+                android:orderInCategory="2"
+                android:title="Send Via Wi-Fi"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_send"
+                android:icon="@mipmap/wifishare"
+                android:orderInCategory="2"
+                android:title="Send"
+                app:showAsAction="always|withText"/>
+
+
+            <item
+                android:id="@+id/menu2_properties"
+                android:icon="@mipmap/properties"
+                android:orderInCategory="2"
+                android:title="Properties"
+                app:showAsAction="always|withText"/>
+
+            <item
+                android:id="@+id/menu2_hide"
+                android:icon="@mipmap/hide"
+                android:orderInCategory="2"
+                android:title="Hide"
+                app:showAsAction="always|withText">
+
+            </item>
+
+        </menu>
+    </item>
+</menu>

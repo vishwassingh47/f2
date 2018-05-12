@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-2" android:layout_height="-1">
+	<ProgressBar android:layout_gravity="17" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="300dp" style="@style/ProgressBar" />
+	<LinearLayout android:orientation="1" android:id="false" android:background="ffffffff" android:layout_width="-1" android:layout_height="-2">
+		<ListView android:id="false" android:layout_width="-1" android:layout_height="0dp" android:cacheColorHint="0000" android:divider="afafaf" android:dividerHeight="1dp" android:layout_weight="{4:1065353216}" />
+		<View android:background="afafaf" android:layout_width="-1" android:layout_height="1dp" />
+		<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="90dp" android:layout_marginLeft="15dp">
+			<EditText android:textSize="27dp" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:paddingLeft="4dp" android:layout_width="0dp" android:layout_height="-2" android:hint="Customize Album" android:singleLine="true" android:layout_weight="{4:1065353216}" android:inputType="1" />
+			<CheckBox android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" android:button="res/drawable/checkbox_grid_file_drawable.xml" />
+			<RadioButton android:textColor="ff000" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" android:button="res/drawable/radio_button_drawable.xml" />
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>

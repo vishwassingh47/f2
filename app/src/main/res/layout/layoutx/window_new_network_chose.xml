@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<GridView android:id="false" android:layout_width="-1" android:layout_height="-2" android:listSelector="res/drawable/background_content_grid.xml" android:stretchMode="2" android:numColumns="3" />
+</LinearLayout>

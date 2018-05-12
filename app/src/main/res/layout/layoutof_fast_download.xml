@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#9e9e9e"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Local Copy Found"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This file is already present in local storage,Do you want to open the local copy of this file or download and overwrite the local copy??"
+        android:textSize="10dp"
+        android:gravity="center"
+        />
+
+    <!--Buttons.... -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/fast_download_again"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Download Again"
+            android:textSize="12dp"
+            android:textColor="#009688" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/fast_download_open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Open"
+            android:textSize="12dp"
+            android:textColor="#009688"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

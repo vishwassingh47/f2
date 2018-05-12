@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:id="false" android:background="res/drawable/home_block_bg_selector.xml" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="true" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:gravity="16" android:orientation="0" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2">
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="10dp" android:src="res/drawable-xhdpi-v4/home_junk_icon.png" />
+		<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Scanning :" android:singleLine="true" />
+			<TextView android:textSize="24dp" android:textColor="ffcccccc" android:ellipsize="2" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Your device needs cleaning" android:singleLine="true" />
+		</LinearLayout>
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:src="res/drawable-xhdpi-v4/home_junk_icon_scanning.png" />
+	</LinearLayout>
+	<LinearLayout android:gravity="16" android:orientation="0" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2">
+		<View android:visibility="1" android:layout_width="60dp" android:layout_height="1dp" android:layout_marginRight="10dp" />
+		<TextView android:textSize="12dp" android:textColor="ff999999" android:ellipsize="3" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:maxLines="2" android:layout_weight="{4:1065353216}" />
+		<TextView android:textSize="16dp" android:textColor="ff35a4f3" android:gravity="17" android:id="false" android:background="res/drawable-hdpi-v4/blank.png" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="40dp" android:layout_marginLeft="5dp" android:text="Clean Now" />
+	</LinearLayout>
+</LinearLayout>

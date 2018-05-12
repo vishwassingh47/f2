@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:paddingLeft="54dp" android:paddingTop="28dp" android:paddingRight="54dp" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="0" android:id="false" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1057300152}">
+		<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/guideline_longpress.png" />
+		<LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-1">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:padding="6dp" android:layout_width="-1" android:layout_height="96dp" android:text="Long press" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="17" android:padding="6dp" android:layout_width="-1" android:layout_height="-2" android:text="Long press and drag" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1056293519}">
+		<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1082130432}" />
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1086324736}">
+			<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/guideline_zoom.png" android:scaleType="5" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="17" android:padding="6dp" android:layout_width="-2" android:layout_height="-1" android:text="Zoom" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

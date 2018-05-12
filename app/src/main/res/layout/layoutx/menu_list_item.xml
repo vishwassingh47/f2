@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:id="false" android:background="res/drawable/background_menu_item.xml" android:focusable="true" android:descendantFocusability="2" android:layout_width="-2" android:layout_height="63dp" android:minWidth="120dp">
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="6dp" android:scaleType="7" />
+	<TextView android:textSize="21dp" android:textColor="ffcfdce5" android:gravity="16" android:id="false" android:layout_width="-2" android:layout_height="63dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:singleLine="true" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="8dp" android:paddingTop="12dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" />
+		<TableLayout android:paddingLeft="8dp" android:paddingTop="12dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1" android:shrinkColumns="1">
+			<TableRow>
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Username" />
+				<EditText android:textColor="ffffffff" android:id="false" android:layout_marginLeft="4dp" android:scrollHorizontally="true" android:singleLine="true" style="@style/editInputText" />
+			</TableRow>
+			<TableRow android:layout_marginTop="8dp">
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:layout_width="-2" android:text="Password" />
+				<EditText android:textColor="ffffffff" android:id="false" android:layout_marginLeft="4dp" android:scrollHorizontally="true" android:singleLine="true" android:inputType="129" style="@style/editInputText" />
+			</TableRow>
+			<TableRow android:id="false" android:layout_width="-1" android:layout_marginTop="8dp">
+				<View />
+				<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:text="Anonymous" style="@style/check_box_style" />
+			</TableRow>
+			<TableRow android:id="false" android:layout_marginTop="4dp">
+				<View />
+				<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:text="Remember password" style="@style/check_box_style" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

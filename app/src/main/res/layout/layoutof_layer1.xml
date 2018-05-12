@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#90a4ae"
+    android:id="@+id/layer1"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/layer1_home"
+        android:src="@drawable/home_icon" />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hash"
+        android:id="@+id/layer1_root"
+        />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/back"
+        android:id="@+id/layer1_back"
+        />
+
+    <!--    SEARCH LAYOUT edit text and cancel  -->
+    <LinearLayout
+        android:id="@+id/layer1_search_layout"
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:hint="Search in internal storage"
+            android:maxLines="1"
+            android:id="@+id/layer1_search_edit"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backspace"
+            android:tint="#f44336"
+            android:clickable="true"
+            android:id="@+id/layer1_search_backspace"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Internal Storage"
+        android:id="@+id/layer1_title"
+        android:textStyle="bold"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/search_icon"
+        android:id="@+id/layer1_search"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/cancel1"
+        android:id="@+id/layer1_close"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/more_icon"
+        android:id="@+id/layer1_options"
+        android:visibility="visible"
+        />
+
+
+</LinearLayout>

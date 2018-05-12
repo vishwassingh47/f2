@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<RelativeLayout android:layout_width="-2" android:layout_height="-2">
+		<LinearLayout android:id="false" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="-2" android:layout_height="-2">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:scaleType="7" />
+		</LinearLayout>
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:focusable="true" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable/multi_window_remove_bg.xml" android:layout_alignTop="false" android:layout_alignRight="false" />
+	</RelativeLayout>
+	<TextView android:textSize="18dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+</LinearLayout>

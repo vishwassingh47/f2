@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:paddingTop="5dp" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:baselineAligned="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:baselineAligned="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Num" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=":" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="/" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:baselineAligned="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Compressing" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" : " />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="3" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginRight="6dp" android:text="Please wait…" android:singleLine="true" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+			<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="/" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" />
+			</LinearLayout>
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		</LinearLayout>
+		<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="18dp" android:layout_marginTop="6dp" style="@style/HorizontalProgressBar" />
+	</LinearLayout>
+</LinearLayout>

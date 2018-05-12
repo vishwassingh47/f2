@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">f2 explorer</string>
+    <string-array name="logout_spinner">
+        <item>logined</item>
+        <item>LogOut</item>
+        <item>Refresh</item>
+    </string-array>
+</resources>

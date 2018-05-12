@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#000000"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Open with...?"
+        android:gravity="center"
+
+        />
+
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:background="#9e9e9e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/file_opener1_list"
+        android:dividerHeight="2dp"
+        android:divider="#ffffff"
+        >
+    </ListView>
+
+
+
+    <CheckBox
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Always open with this"
+        android:id="@+id/file_opener1_checkbox"
+        />
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can reset the default application by :\n Long press on any file-> options ->Clear Defaults"
+        android:id="@+id/file_opener1_extra"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

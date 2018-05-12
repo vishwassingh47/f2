@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<ListView android:id="false" android:layout_width="-1" android:layout_height="-1" android:listSelector="res/drawable/popupbox_listview_selector.xml" android:divider="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:dividerHeight="1dp" />
+	</LinearLayout>
+	<ProgressBar android:layout_gravity="17" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="50dp" android:layout_marginBottom="50dp" />
+</FrameLayout>

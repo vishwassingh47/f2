@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="1" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:padding="5dp" android:layout_width="-1" android:layout_height="-2" android:layout_margin="6dp" android:text="Please choose the root directory %1$s(%2$s) of ext-SDCard to grant ES permission to operate" android:lineSpacingExtra="8dp" />
+	<ImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="6dp" android:src="res/drawable-hdpi-v4/sd_operate_step.png" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:padding="0dp" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2">
+	<RelativeLayout android:id="false" android:background="res/drawable-hdpi-v4/app_pic_folder_bg.png" android:layout_width="228dp" android:layout_height="228dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+		<LinearLayout android:gravity="17" android:orientation="1" android:background="ffa5a5a5" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:layout_marginRight="14dp" android:layout_marginBottom="15dp">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			<TextView android:textSize="24dp" android:textColor="ff000" android:ellipsize="3" android:gravity="1" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		</LinearLayout>
+		<CheckBox android:id="false" android:padding="0dp" android:visibility="2" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:button="res/drawable/checkbox_grid_file_drawable.xml" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</LinearLayout>

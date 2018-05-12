@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:id="false" android:background="res/drawable/cleaner_card_bg_selector.xml" android:padding="10dp" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp">
+	<ImageView android:gravity="16" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="5dp" android:src="res/drawable-xhdpi-v4/p18.png" />
+	<LinearLayout android:gravity="16" android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp">
+		<TextView android:textSize="18dp" android:textColor="fff5704d" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:text="清理垃圾" />
+		<TextView android:textAppearance="{2:16842817}" android:textSize="16dp" android:textColor="ff999999" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="10dp" android:text="Let&apos;s know more functions now" />
+	</LinearLayout>
+</LinearLayout>

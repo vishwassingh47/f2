@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!---Refresh -->
+    <item
+        android:id="@+id/refresh"
+        android:icon="@mipmap/refresh"
+        android:title="Refresh"/>
+
+
+    <!---SORT -->
+    <item
+        android:id="@+id/sort"
+        android:icon="@mipmap/sort"
+        android:title="Sort">
+        <menu>
+            <item
+                android:id="@+id/sort_default"
+                android:icon="@mipmap/android4"
+                android:title="DEFAULT (Folders,Files)"/>
+            <item
+                android:id="@+id/sort_name1"
+                android:icon="@mipmap/android1"
+                android:title="Name (A-Z)"/>
+            <item
+                android:id="@+id/sort_name2"
+                android:icon="@mipmap/android1"
+                android:title="Name (Z-A)"/>
+
+            <item
+                android:id="@+id/sort_date1"
+                android:icon="@mipmap/android1"
+                android:title="Date (latest first)"/>
+            <item
+                android:id="@+id/sort_date2"
+                android:icon="@mipmap/android1"
+                android:title="Date (oldest first)"/>
+
+            <item
+                android:id="@+id/sort_size1"
+                android:icon="@mipmap/android1"
+                android:title="Size (large first)"/>
+            <item
+                android:id="@+id/sort_size2"
+                android:icon="@mipmap/android1"
+                android:title="Size (small first)"/>
+        </menu>
+    </item>
+
+
+    <!---CUSTOMIZE -->
+    <item
+        android:id="@+id/customize"
+        android:icon="@mipmap/customise"
+        android:title="Customise">
+        <menu>
+            <item
+                android:id="@+id/options_list"
+                android:icon="@mipmap/android1"
+                android:title="List View"/>
+
+            <item
+                android:id="@+id/options_grid"
+                android:icon="@mipmap/android5"
+                android:title="Grid View"/>
+
+        </menu>
+    </item>
+
+    <!---Close -->
+    <item
+        android:id="@+id/close"
+        android:icon="@mipmap/cancel1"
+            android:title="Close"/>
+
+
+</menu>

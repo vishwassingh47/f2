@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="81dp">
+	<ImageView android:layout_gravity="16" android:id="false" android:padding="4dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginRight="6dp" android:scaleType="7" />
+	<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1061158912}">
+		<TextView android:textAppearance="{2:16842817}" android:textSize="24dp" android:textColor="res/color/color_text_preference.xml" android:ellipsize="4" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="App Name" android:singleLine="true" />
+	</LinearLayout>
+	<ImageView android:layout_gravity="16" android:id="false" android:background="res/drawable/content_listview_selector.xml" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="90dp" android:layout_height="81dp" android:src="res/drawable-hdpi-v4/setting_new.png" android:scaleType="5" />
+</LinearLayout>

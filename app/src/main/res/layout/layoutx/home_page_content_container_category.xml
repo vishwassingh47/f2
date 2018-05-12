@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<RelativeLayout android:gravity="16" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-1" android:layout_height="42dp">
+		<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="10dp" android:singleLine="true" android:layout_weight="{4:1065353216}" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="10dp" android:src="res/drawable-hdpi-v4/access_tab_up.png" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+	</RelativeLayout>
+	<View android:id="false" android:background="res/drawable-hdpi-v4/home_line_horizontal.9.png" android:visibility="2" android:layout_width="-1" android:layout_height="1dp" />
+</LinearLayout>

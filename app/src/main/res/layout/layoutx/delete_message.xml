@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.estrongs.android.pop.utils.DeleteMessageContainer xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<TextView android:textColor="ffffffff" android:id="resourceId:0x102000b" android:padding="10dp" android:layout_width="-1" android:layout_height="-2" style="?android:attr/textAppearanceMedium" />
+	<RelativeLayout android:id="false" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:src="res/drawable-hdpi-v4/prompt.png" />
+		<TextView android:textSize="18dp" android:textColor="ff818181" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_toRightOf="false" android:lineSpacingExtra="5dp" />
+	</RelativeLayout>
+</com.estrongs.android.pop.utils.DeleteMessageContainer>

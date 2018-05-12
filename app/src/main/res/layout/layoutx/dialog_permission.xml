@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="-1" android:layout_height="-2">
+		<TableLayout android:layout_width="-1" android:layout_height="-2">
+			<TableRow android:gravity="16" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:gravity="5" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="Read" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="Write" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="Execute" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Owner" android:singleLine="true" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Group" android:singleLine="true" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:gravity="16" android:id="false" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Other" android:singleLine="true" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+			</TableRow>
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="12dp" />
+			<TableRow android:gravity="16" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Set UID" android:singleLine="true" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Set GID" android:singleLine="true" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+			</TableRow>
+			<TableRow android:gravity="16" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Sticky bit" android:singleLine="true" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<CheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

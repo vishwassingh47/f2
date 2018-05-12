@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:background="res/drawable/background_menu_item.xml" android:focusable="true" android:descendantFocusability="2" android:layout_width="-2" android:layout_height="64dp" android:minWidth="120dp">
+	<Button android:textSize="21dp" android:textColor="ffcfdce5" android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/blank.png" android:paddingLeft="6dp" android:clickable="false" android:layout_width="-2" android:layout_height="63dp" android:drawablePadding="6dp" />
+</LinearLayout>

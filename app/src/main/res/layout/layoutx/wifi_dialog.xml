@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="450dp" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:padding="8dp" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" />
+		<LinearLayout android:orientation="1" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="4dp" android:text="Password" style="?android:attr/textAppearanceSmallInverse" />
+			<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" android:inputType="129" style="@style/editInputText" />
+			<CheckBox android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Show password" style="?android:attr/textAppearanceSmallInverse" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

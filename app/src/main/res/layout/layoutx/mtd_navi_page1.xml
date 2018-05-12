@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:background="res/drawable-hdpi-v4/access_titlebar_bg.9.png" android:layout_width="-1" android:layout_height="-1" android:baselineAligned="false">
+	<FrameLayout android:id="false" android:background="res/drawable-hdpi-v4/access_content_icon_bg.9.png" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+		<com.estrongs.android.ui.view.NaviListView android:id="false" android:layout_width="-1" android:layout_height="-1" android:listSelector="res/drawable/access_content_icon_bg_selector.xml" android:cacheColorHint="0000" android:groupIndicator="res/drawable-hdpi-v4/blank.png" android:childIndicator="res/drawable-hdpi-v4/blank.png" android:divider="res/drawable-hdpi-v4/access_content_sp.9.png" />
+	</FrameLayout>
+	<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:background="res/drawable-hdpi-v4/window_toolbar_bg.9.png" android:focusable="false" android:layout_width="-1" android:layout_height="81dp" />
+</LinearLayout>

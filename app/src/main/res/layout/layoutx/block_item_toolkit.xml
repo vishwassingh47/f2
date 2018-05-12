@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:focusable="true" android:layout_width="-1" android:layout_height="-2">
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:src="res/drawable-hdpi-v4/sidebar_ftp.png" />
+	<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="60dp" android:layout_marginRight="4dp" android:text="name" android:singleLine="true" />
+</LinearLayout>

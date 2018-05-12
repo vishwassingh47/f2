@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifi_connected"
+        >
+
+    </ListView>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SEARCH Again"
+        android:id="@+id/searchfor_connected_devices"
+        />
+
+
+    <!--animation and logs-->
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#607b8d"
+        >
+
+
+        <!--logs-->
+        <ScrollView
+            android:id="@+id/send_logs_scroll"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:textColor="#ffeb3b"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_logs"
+                />
+
+        </ScrollView>
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/wifi"
+            />
+
+
+    </LinearLayout>
+
+
+    <!--Progress-->
+    <LinearLayout
+        android:id="@+id/send_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#90caf9"
+        >
+
+        <!--top heading -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Sending Over Wi-Fi"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+
+        <!--Border -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"
+            >
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!--description -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:text="NAME :"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="FROM :"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="TO :"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size :"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <!--Border -->
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                >
+            </LinearLayout>
+
+            <!--details -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/send_name"
+                    android:text="vishwas.txt"
+                    />
+
+                <!--file path and storage logo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/send_from_logo"
+                        android:src="@mipmap/google_drive"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:id="@+id/send_from"
+                        android:text="/sdcard/"
+
+                        />
+                </LinearLayout>
+
+                <!--file path and storage logo -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/send_to_logo"
+                        android:src="@mipmap/google_drive"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:id="@+id/send_to"
+                        android:text="/sdcard/"
+
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/send_size"
+                    android:text="242 GB"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--Border -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffffff"
+            >
+        </LinearLayout>
+
+
+        <!--progress info.... -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROGRESS"
+                android:textStyle="bold"
+                android:textColor="#f44336"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 / 76 items"
+                android:id="@+id/send_itemsProgress"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_sizeProgress"
+                android:text="24kb / 76mb"
+
+                />
+        </LinearLayout>
+
+
+        <!--progress bar.... -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="56 %"
+                android:textColor="#f44336"
+                android:textStyle="bold"
+                android:id="@+id/send_percent"
+                />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:progress="79"
+                android:background="@drawable/pb_only_background"
+                android:progressDrawable="@drawable/pb_only_progress"
+                android:indeterminateOnly="false"
+                android:id="@+id/send_progressBar"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="32kb/sec"
+                android:gravity="center"
+                android:id="@+id/send_speed"
+                />
+
+        </LinearLayout>
+
+
+        <!--Buttons.... -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/send_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                android:textColor="#e91e63" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

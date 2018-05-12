@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:gravity="16" android:orientation="1" android:layout_width="-1" android:layout_height="0dp" android:minHeight="120dp" android:layout_weight="{4:1065353216}">
+		<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="12dp">
+			<ProgressBar android:id="false" android:layout_width="67dp" android:layout_height="67dp" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" style="@style/ProgressBar" />
+			<TextView android:textSize="27dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginBottom="5dp" android:text="" />
+		</LinearLayout>
+		<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:layout_marginRight="10dp" style="@style/HorizontalProgressBar" />
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="30dp" android:layout_marginTop="8dp">
+			<TextView android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="10dp" android:text="0%" android:layout_weight="{4:1065353216}" />
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginRight="10dp" android:text="0" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="60dp">
+			<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="16" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:src="res/drawable-hdpi-v4/popupbox_checkbox_unchecked.png" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:layout_gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="4dp" android:text="Disable Auto-update" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:padding="20dp" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="The file %s already exists,overwrite it?" />
+		<TableLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="10dp" android:stretchColumns="1">
+			<TableRow>
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Source file" android:singleLine="true" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:ellipsize="3" android:layout_gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:singleLine="false" android:layout_weight="{4:1065353216}" />
+			</TableRow>
+			<TableRow>
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Size:" android:singleLine="true" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:singleLine="true" />
+			</TableRow>
+			<TableRow>
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Modified:" android:singleLine="true" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:singleLine="true" />
+			</TableRow>
+		</TableLayout>
+		<CheckBox android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="10dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Apply to all" />
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:background="b0000" android:layout_width="-1" android:layout_height="-1">
+	<TextView android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Switching to Google Play..." />
+	<ProgressBar android:id="false" android:layout_width="-2" android:layout_height="5dp" android:layout_marginTop="8dp" android:layout_below="false" android:layout_alignLeft="false" android:layout_alignRight="false" style="@style/HorizontalProgressBar" />
+	<WebView android:id="false" android:layout_width="1dp" android:layout_height="1dp" android:layout_below="false" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:background="res/drawable/tablet_preference_background.xml" android:paddingRight="{2:16842851}" android:layout_width="-1" android:layout_height="96dp" android:baselineAligned="false">
+	<RelativeLayout android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="24dp" android:layout_marginRight="20dp" android:layout_weight="{4:1065353216}">
+		<TextView android:textSize="24dp" android:textColor="res/color/color_text_preference.xml" android:ellipsize="4" android:id="resourceId:0x1020016" android:fadingEdge="4096" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+		<TextView android:textSize="18dp" android:textColor="ff59c3ef" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="www.estrongs.com" android:layout_below="resourceId:0x1020016" android:layout_alignLeft="resourceId:0x1020016" />
+		<TextView android:textSize="18dp" android:textColor="res/color/color_preference_summary.xml" android:id="resourceId:0x1020010" android:layout_width="-2" android:layout_height="-2" android:text="© 2009-2015, ES APP Group" android:layout_below="false" android:layout_alignLeft="resourceId:0x1020016" />
+	</RelativeLayout>
+	<LinearLayout android:gravity="16" android:orientation="1" android:id="resourceId:0x1020018" android:layout_width="-2" android:layout_height="-1" />
+</LinearLayout>

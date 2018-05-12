@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:layout_width="-1" android:layout_height="-1">
+	<ProgressBar android:id="false" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="12dp" android:indeterminateDrawable="res/drawable/progress_drawable.xml" android:layout_centerInParent="true" android:layout_centerHorizontal="false" android:layout_centerVertical="false" />
+	<ScrollView android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+			<TableLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:stretchColumns="1" android:shrinkColumns="1">
+				<TableRow android:layout_marginTop="7dp" android:layout_marginBottom="6dp">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Account" android:singleLine="true" />
+					<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:hint="Please input your mobile phone number" android:inputType="2" style="@style/editInputText" />
+				</TableRow>
+				<TableRow android:layout_marginBottom="7dp">
+					<TextView android:layout_width="-2" android:layout_height="-2" />
+					<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Please use Chinese mobile phone number" />
+				</TableRow>
+				<TableRow android:layout_marginTop="7dp" android:layout_marginBottom="7dp">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Password" android:singleLine="true" />
+					<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:hint="Please input password" android:inputType="129" style="@style/editInputText" />
+				</TableRow>
+			</TableLayout>
+			<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="16dp">
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<LinearLayout android:orientation="0" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-2" android:layout_height="-2">
+					<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="I have an account, click" />
+					<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" " />
+					<TextView android:textSize="18dp" android:textColor="ff069fb" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Login" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

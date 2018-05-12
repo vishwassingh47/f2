@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/cab1_selected"
+        app:showAsAction="always"
+        android:title="0 Selected"
+        android:orderInCategory="0"
+         />
+    <item
+        android:id="@+id/cab1_copy"
+        app:showAsAction="always"
+        android:title="Copy"
+        android:icon="@mipmap/copy2"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/cab1_delete"
+        app:showAsAction="always"
+        android:title="Delete"
+        android:icon="@mipmap/delete"
+        android:orderInCategory="2"
+        />
+
+    <item
+        android:id="@+id/cab1_overflow"
+        app:showAsAction="always"
+        android:title="More Options"
+        android:icon="@mipmap/overflow"
+        android:orderInCategory="3"
+        >
+
+        <menu>
+
+            <item
+                android:id="@+id/cab1_cut"
+                app:showAsAction="never"
+                android:title="Cut"
+                android:icon="@mipmap/cut"
+                android:orderInCategory="4"
+                />
+
+            <item
+                android:id="@+id/cab1_rename"
+                app:showAsAction="never"
+                android:title="Rename"
+                android:icon="@mipmap/rename"
+                android:orderInCategory="5"
+                />
+
+            <item
+                android:id="@+id/cab1_restore"
+                app:showAsAction="never"
+                android:title="Restore"
+                android:icon="@mipmap/restore"
+                android:orderInCategory="6"
+                />
+
+            <item
+                android:id="@+id/cab1_install"
+                app:showAsAction="never"
+                android:title="Install"
+                android:icon="@mipmap/unknown"
+                android:orderInCategory="7"
+                />
+
+            <item
+                android:id="@+id/cab1_install_in_background"
+                app:showAsAction="never"
+                android:title="(#)Install in Background"
+                android:icon="@mipmap/unknown"
+                android:orderInCategory="8"
+                />
+
+            <item
+                android:id="@+id/cab1_install_as_system_app"
+                app:showAsAction="never"
+                android:title="(#)Install as System App"
+                android:icon="@mipmap/unknown"
+                android:orderInCategory="9"
+                />
+
+
+            <item
+                android:id="@+id/cab1_uninstall"
+                app:showAsAction="never"
+                android:title="Uninstall"
+                android:icon="@mipmap/uninstall"
+                android:orderInCategory="10"
+                />
+
+            <item
+                android:id="@+id/cab1_uninstall_in_background"
+                app:showAsAction="never"
+                android:title="(#)UnInstall in Background"
+                android:icon="@mipmap/uninstall"
+                android:orderInCategory="11"
+                />
+
+            <item
+                android:id="@+id/cab1_makeUserApp"
+                app:showAsAction="never"
+                android:title="(#)Make user App"
+                android:icon="@mipmap/unknown"
+                android:orderInCategory="11"
+                />
+            <item
+                android:id="@+id/cab1_makeSystemApp"
+                app:showAsAction="never"
+                android:title="(#)Make System App"
+                android:icon="@mipmap/unknown"
+                android:orderInCategory="11"
+                />
+
+
+            <item
+                android:id="@+id/cab1_backup"
+                app:showAsAction="never"
+                android:title="Backup Apk"
+                android:icon="@mipmap/backup"
+                android:orderInCategory="12"
+                />
+
+            <item
+                android:id="@+id/cab1_clear_default"
+                app:showAsAction="never"
+                android:title="Clear Defaults"
+                android:icon="@mipmap/clear"
+                android:orderInCategory="13"
+                />
+
+            <item
+                android:id="@+id/cab1_properties"
+                app:showAsAction="never"
+                android:title="Properties"
+                android:icon="@mipmap/properties"
+                android:orderInCategory="14"
+                />
+
+            <item
+                android:id="@+id/cab1_share"
+                app:showAsAction="never"
+                android:title="Share"
+                android:icon="@mipmap/share"
+                android:orderInCategory="15"
+                />
+
+            <item
+                android:id="@+id/cab1_share_wifi"
+                app:showAsAction="never"
+                android:title="Share Via WiFi"
+                android:icon="@mipmap/share_via_wifi"
+                android:orderInCategory="16"
+                />
+
+
+            <item
+                android:id="@+id/cab1_favourite"
+                app:showAsAction="never"
+                android:title="Add to Favourites"
+                android:icon="@mipmap/favourite"
+                android:orderInCategory="17"
+                />
+
+            <item
+                android:id="@+id/cab1_unfavourite"
+                app:showAsAction="never"
+                android:title="Remove from Favourites"
+                android:icon="@mipmap/unfavourite"
+                android:orderInCategory="18"
+                />
+
+
+
+            <item
+                android:id="@+id/cab1_select_all"
+                app:showAsAction="never"
+                android:title="Select All"
+                android:icon="@mipmap/select_all"
+                android:orderInCategory="19"
+                />
+            <item
+                android:id="@+id/cab1_select_none"
+                app:showAsAction="never"
+                android:title="Select None"
+                android:icon="@mipmap/select_none"
+                android:orderInCategory="20"
+                />
+
+            <item
+                android:id="@+id/cab1_hide"
+                app:showAsAction="never"
+                android:title="Hide"
+                android:icon="@mipmap/hide"
+                android:orderInCategory="21"
+                />
+
+            <item
+                android:id="@+id/cab1_unhide"
+                app:showAsAction="never"
+                android:title="UnHide"
+                android:icon="@mipmap/unhide"
+                android:orderInCategory="22"
+                />
+
+        </menu>
+
+    </item>
+
+
+</menu>

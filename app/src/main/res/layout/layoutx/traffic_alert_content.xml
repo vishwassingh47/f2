@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="22dp" android:textColor="ff000" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_margin="10dp" android:text="Welcome to ES File Explorer! Using the network feature in ES will generate network traffic, its cost depends on your local network. Continue?" />
+		<CheckBox android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="10dp" android:text="Do not show this alert again" />
+	</LinearLayout>
+</ScrollView>

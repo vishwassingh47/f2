@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root2"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#eeff41"
+    android:padding="10dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opps....The File you are pasting already exist in this directory..How do you want to proceed ?"
+        android:gravity="center"
+        android:textColor="#e91e63"
+        android:layout_marginBottom="5dp"
+
+        />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FilePath:xxxxxxxxxx"
+        android:gravity="center"
+        android:textColor="#60798b"
+        android:id="@+id/textfilepathod"
+
+        />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <Button
+            android:id="@+id/button1od"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="skip"
+            android:minWidth="0dp"
+            android:textSize="12sp"
+            android:onClick="skip_od"
+            />
+        <Button
+            android:id="@+id/button2od"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="overwrite"
+            android:minWidth="0dp"
+            android:textSize="12sp"
+            android:onClick="overwrite_od"
+            />
+        <Button
+            android:id="@+id/button3od"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keep both"
+            android:onClick="keep_both_od"
+            android:minWidth="0dp"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkod"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply to all"
+        />
+
+
+</LinearLayout>
+

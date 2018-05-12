@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="109dp">
+				<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="435814unknown unit:0x21" android:layout_marginRight="10dp" android:src="res/drawable-mdpi-v4/fex.png" android:scaleType="3" />
+				<FrameLayout android:layout_width="0dp" android:layout_height="90dp" android:layout_marginRight="4dp" android:layout_weight="{4:1065353216}">
+					<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="90dp">
+						<TextView android:textSize="27dp" android:textColor="ffffffff" android:gravity="16" android:layout_gravity="17" android:id="false" android:layout_width="-1" android:layout_height="0dp" android:text="ES文件管理器" android:scrollHorizontally="false" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+					</LinearLayout>
+					<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="90dp">
+						<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="36dp" android:layout_marginTop="2dp">
+							<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="83" android:id="false" android:layout_width="-2" android:layout_height="-1" android:layout_marginBottom="1dp" android:text="13.1k/2.6M" android:scrollHorizontally="false" android:singleLine="true" />
+							<TextView android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+							<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="85" android:id="false" android:paddingRight="3dp" android:layout_width="-2" android:layout_height="-1" android:layout_marginBottom="1dp" android:text="15%" android:scrollHorizontally="false" android:singleLine="true" />
+						</LinearLayout>
+						<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="15dp" android:layout_marginTop="0dp" style="@style/HorizontalProgressBar" />
+					</LinearLayout>
+				</FrameLayout>
+				<RelativeLayout android:layout_width="96dp" android:layout_height="39dp" android:layout_marginTop="1dp" android:layout_marginRight="435814unknown unit:0x21">
+					<Button android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:layout_gravity="17" android:id="false" android:background="res/drawable/component_child_download_expanded_selector.xml" android:nextFocusDown="false" android:layout_width="-1" android:layout_height="-1" android:text="停止" />
+					<ProgressBar android:id="false" android:visibility="2" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/ProgressBar" />
+				</RelativeLayout>
+			</LinearLayout>
+			<Gallery android:id="false" android:background="res/drawable-hdpi-v4/gallery_bg.9.png" android:nextFocusUp="false" android:layout_width="-1" android:layout_height="-2" />
+			<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="22dp" android:layout_marginTop="2dp">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="16" android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="435814unknown unit:0x21" android:text="Version:" android:scrollHorizontally="false" android:singleLine="true" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="16" android:layout_gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="1.61" android:scrollHorizontally="false" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="21" android:layout_gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginRight="435814unknown unit:0x21" android:text="Size:" android:scrollHorizontally="false" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+			</LinearLayout>
+			<View android:background="ffffffff" android:layout_width="-1" android:layout_height="1dp" android:layout_marginLeft="435814unknown unit:0x21" android:layout_marginTop="6dp" android:layout_marginRight="435814unknown unit:0x21" />
+			<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="51" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="435814unknown unit:0x21" android:layout_marginTop="6dp" android:layout_marginRight="435814unknown unit:0x21" android:text="Description:" android:scrollHorizontally="false" android:singleLine="true" />
+			<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="51" android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="435814unknown unit:0x21" android:layout_marginTop="6dp" android:layout_marginRight="435814unknown unit:0x21" android:text="千万用户，装机必备,一定要装啊，必须" android:scrollHorizontally="false" />
+		</LinearLayout>
+		<ProgressBar android:layout_gravity="48" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="4dp" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+	</FrameLayout>
+</ScrollView>

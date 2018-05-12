@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:paddingLeft="8dp" android:paddingTop="12dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1" android:shrinkColumns="1">
+		<TableRow>
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Path:" />
+			<EditText android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_marginLeft="4dp" android:hint="Please input the download address" android:scrollHorizontally="true" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:layout_marginTop="8dp">
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:layout_width="-2" android:text="Name:" />
+			<EditText android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_marginLeft="4dp" android:hint="Please input the file name" android:scrollHorizontally="true" android:singleLine="true" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

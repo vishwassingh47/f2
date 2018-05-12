@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.estrongs.android.pop.esclasses.ESDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res/com.estrongs.android.pop.pro" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+		<LinearLayout android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/main_titlebar_bg.9.png" android:layout_width="-1" android:layout_height="25dp">
+			<View android:id="false" android:layout_width="-1" android:layout_height="3dp" />
+			<LinearLayout android:gravity="17" android:id="false" android:layout_width="-1" android:layout_height="22dp">
+				<LinearLayout android:gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-1" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:id="false" android:background="res/drawable-hdpi-v4/main_addressbar_bg.9.png" android:layout_width="-1" android:layout_height="-2">
+			<android.support.v7.widget.Toolbar android:id="false" android:layout_width="-1" android:layout_height="63dp" app:popupTheme="null" />
+		</LinearLayout>
+		<RelativeLayout android:id="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+			<com.estrongs.android.ui.drag.DragLayer android:id="false" android:layout_width="-1" android:layout_height="-1" />
+			<com.estrongs.android.ui.controller.widget.ESFloatingActionButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="30dp" android:layout_marginBottom="45dp" android:src="res/drawable-hdpi-v4/toolbar_new.png" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/FloatingActionButton" />
+			<ImageView android:id="false" android:visibility="2" android:layout_width="84dp" android:layout_height="84dp" android:layout_marginRight="30dp" android:layout_marginBottom="45dp" android:src="res/drawable-hdpi-v4/toolbar_new.png" android:scaleType="7" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="4dp" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/icon_display.png" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+		</RelativeLayout>
+	</LinearLayout>
+	<com.estrongs.android.pop.esclasses.ESDrawerFrameLayout android:layout_gravity="8388611" android:id="false" android:layout_width="-1" android:layout_height="-1" />
+	<com.estrongs.android.pop.esclasses.ESDrawerFrameLayout android:layout_gravity="8388613" android:id="false" android:layout_width="-1" android:layout_height="-1" />
+</com.estrongs.android.pop.esclasses.ESDrawerLayout>

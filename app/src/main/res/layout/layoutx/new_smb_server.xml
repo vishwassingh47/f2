@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:padding="8dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1" android:shrinkColumns="1">
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:layout_gravity="16" android:id="false" android:layout_marginRight="6dp" android:text="Domain" />
+			<EditText android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="Domain name, can be empty" android:scrollHorizontally="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:layout_gravity="16" android:id="false" android:layout_marginRight="6dp" android:text="Server" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="IP Addr.,or IP Addr./SharedFolder" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView />
+			<LinearLayout android:orientation="0">
+				<TextView android:textSize="21dp" android:textColor="ff818181" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Example" />
+				<TextView android:textSize="21dp" android:textColor="ff818181" android:layout_width="-2" android:layout_height="-2" android:text=":" />
+				<TextView android:textSize="21dp" android:textColor="ff818181" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="192.168.1.100/My Documents" />
+			</LinearLayout>
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Username" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Password" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="2dp" android:paddingBottom="2dp">
+			<TextView />
+			<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:text="Anonymous" style="@style/check_box_style" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Display as" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="Click to edit, can be empty" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2">
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="res/drawable-hdpi-v4/history_listitem_file.png" android:scaleType="3" />
+	<LinearLayout android:gravity="16" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:minHeight="42dp" android:layout_weight="{4:1065353216}">
+		<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:maxLines="1" />
+		<TextView android:textSize="18dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:maxLines="2" />
+	</LinearLayout>
+</LinearLayout>

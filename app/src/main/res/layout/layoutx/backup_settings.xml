@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:padding="4dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1">
+		<TableRow android:id="false" android:layout_height="54dp" android:layout_marginBottom="3dp">
+			<TextView android:textColor="ffffffff" android:gravity="21" android:layout_gravity="17" android:id="false" android:layout_height="-1" android:text="Backup dir :" />
+			<RelativeLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+				<Button android:textSize="21dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:background="res/drawable/popupbox_button_action_selector.xml" android:layout_width="54dp" android:layout_height="-1" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="..." android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+				<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="/sdcard/" android:layout_toLeftOf="false" style="@style/editInputText" />
+			</RelativeLayout>
+		</TableRow>
+		<TableRow android:id="false" android:layout_height="54dp" android:layout_marginTop="3dp">
+			<TextView android:textColor="ffffffff" android:gravity="21" android:id="false" android:layout_height="-1" android:text="Password" />
+			<EditText android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

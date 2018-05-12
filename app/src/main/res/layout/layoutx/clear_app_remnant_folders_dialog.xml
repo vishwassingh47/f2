@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="19" android:id="false" android:paddingLeft="14dp" android:paddingTop="16dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2" android:text="The following apps are removed.
+You can delete associated folders" android:lineSpacingMultiplier="{4:1067030938}" />
+	<ImageView android:id="false" android:background="1affffff" android:layout_width="-1" android:layout_height="1dp" android:layout_alignParentBottom="true" />
+	<ExpandableListView android:id="false" android:layout_width="-1" android:layout_height="0dp" android:listSelector="res/drawable/popupbox_listview_selector.xml" android:cacheColorHint="0000" android:dividerHeight="0dp" android:layout_weight="{4:1063004406}" />
+	<CheckBox android:enabled="true" android:textSize="18dp" android:textColor="ffffffff" android:gravity="19" android:id="false" android:layout_width="-2" android:layout_height="54dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:checked="false" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Don&apos;t delete media files" />
+</LinearLayout>

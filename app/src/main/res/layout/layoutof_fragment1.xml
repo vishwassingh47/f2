@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <!--layer 1-->
+    <LinearLayout
+        android:id="@+id/layer2_pager2"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="vertical"
+        android:background="#f44336"
+        android:gravity="right"
+        >
+
+        <HorizontalScrollView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:id="@+id/scroller"
+            android:scrollbarThumbHorizontal="@color/colorAccent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/horiLinearLayout"
+                >
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:background="#ffffff"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/space_analyser_list"
+        >
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:text="ClipBoard"
+        android:textColor="@color/white"
+        android:background="@color/main_theme_red"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="S.No"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/clipboard_list"
+        android:background="@color/theme1_grey"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:scrollbarSize="10dp"
+        android:scrollbars="vertical"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        >
+    </ListView>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clipboard_sizeTotal"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="Total Size : 12.4 GB"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clipboard_itemsTotal"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="Total Items : 6"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/clipboard_btn"
+        android:textSize="14dp"
+        android:textColor="@color/progress_blue"
+        android:text="HIDE"
+        />
+
+
+
+</LinearLayout>

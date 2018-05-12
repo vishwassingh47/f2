@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="-1" android:layout_height="-2">
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/gesture_thumbnail_bg.9.png" android:padding="4dp" android:layout_width="84dp" android:layout_height="84dp" android:layout_margin="4dp" android:scaleType="7" />
+	<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_weight="{4:1065353216}" />
+	<Button android:textColor="ffffffff" android:id="false" android:background="res/drawable/content_button_bg_selector.xml" android:layout_width="75dp" android:layout_height="45dp" android:layout_marginRight="12dp" android:text="Delete" />
+	<Button android:textColor="ffffffff" android:id="false" android:background="res/drawable/content_button_bg_selector.xml" android:layout_width="75dp" android:layout_height="45dp" android:layout_marginRight="12dp" android:text="Edit" />
+</LinearLayout>

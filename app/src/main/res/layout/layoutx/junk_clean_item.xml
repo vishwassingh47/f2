@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:id="false" android:background="res/drawable/cleaner_card_bg_selector.xml" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+	<ImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="10dp" android:src="res/drawable-hdpi-v4/ic_launcher.png" android:scaleType="7" />
+	<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<TextView android:textSize="15dp" android:textColor="ff000" android:ellipsize="3" android:gravity="80" android:id="false" android:layout_width="-1" android:layout_height="0dp" android:text="ItemName" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+		<LinearLayout android:gravity="48" android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="12dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Advice :" />
+			<TextView android:textSize="12dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Clean" />
+		</LinearLayout>
+	</LinearLayout>
+	<TextView android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:text="59MB" />
+	<LinearLayout android:gravity="16" android:id="false" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="-2" android:layout_height="-1">
+		<com.estrongs.android.ui.view.TripleStateCheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-xhdpi-v4/triple_state_checkbox_checknone.png" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clickable="false" android:layout_width="-1" android:layout_height="120dp">
+	<ImageView android:layout_gravity="16" android:id="false" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="10dp" android:src="res/drawable-hdpi-v4/app_pic_net_instagram.png" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+	<TextView android:layout_gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginLeft="16dp" android:text="TextView" android:layout_weight="{4:1065353216}" android:layout_toRightOf="false" android:layout_centerVertical="true" />
+	<ImageView android:layout_gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="10dp" android:src="res/drawable-hdpi-v4/popupbox_radio_button_unchecked.png" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

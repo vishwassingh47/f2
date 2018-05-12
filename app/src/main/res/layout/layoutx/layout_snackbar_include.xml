@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textAppearance="null" android:ellipsize="3" android:layout_gravity="8388627" android:id="false" android:paddingLeft="12dp" android:paddingTop="14dp" android:paddingRight="12dp" android:paddingBottom="14dp" android:layout_width="-2" android:layout_height="-2" android:maxLines="2" android:layout_weight="{4:1065353216}" />
+	<TextView android:textAppearance="null" android:layout_gravity="8388629" android:id="false" android:background="{2:2130772021}" android:paddingLeft="12dp" android:paddingTop="14dp" android:paddingRight="12dp" android:paddingBottom="14dp" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="0dp" />
+</merge>

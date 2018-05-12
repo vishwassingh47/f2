@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="320dp"
+
+
+    android:background="#000000">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Write Access Required,Please Select the Root Directory of Your SD Card"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+
+        />
+    <ImageView
+        android:layout_margin="10dp"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/saf"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:id="@+id/saf_cancel"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:id="@+id/saf_ok"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

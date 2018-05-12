@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:gravity="17" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_margin="12dp" android:text="Required Application:" />
+		<LinearLayout android:padding="12dp" android:layout_width="-1" android:layout_height="-2">
+			<ImageView android:id="false" android:layout_width="72dp" android:layout_height="72dp" />
+			<LinearLayout android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="4dp" android:minHeight="48dp">
+				<LinearLayout android:gravity="16" android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="title" android:singleLine="true" />
+					<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="summary" android:singleLine="true" />
+				</LinearLayout>
+				<Button android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/popupbox_button_copy_selector.xml" android:layout_width="120dp" android:layout_height="48dp" android:text="Download" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:gravity="16" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:minHeight="48dp">
+			<LinearLayout android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="0/0" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="12dp" android:text="0%" />
+			</LinearLayout>
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="18dp" android:layout_marginLeft="10dp" android:layout_marginTop="2dp" android:layout_marginRight="10dp" style="@style/HorizontalProgressBar" />
+		</LinearLayout>
+		<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="12dp" android:layout_marginBottom="12dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Do not show this alert again" />
+	</LinearLayout>
+</ScrollView>

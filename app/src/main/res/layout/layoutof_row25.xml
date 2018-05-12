@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginStart="5dp"
+    >
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:src="@mipmap/delete1"
+        android:id="@+id/row25_icon"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Tab Name"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:id="@+id/row25_name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/sdcard"
+            android:textSize="10dp"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:id="@+id/row25_path"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

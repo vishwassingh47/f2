@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.estrongs.android.pop.esclasses.ESDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-1" android:baselineAligned="false" />
+	<com.estrongs.android.pop.esclasses.ESDrawerFrameLayout android:layout_gravity="8388613" android:id="false" android:layout_width="-1" android:layout_height="-1" />
+</com.estrongs.android.pop.esclasses.ESDrawerLayout>

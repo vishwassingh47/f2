@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<android.support.v7.widget.RecyclerView android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" />
+	<LinearLayout android:orientation="0" android:id="false" android:background="res/drawable-hdpi-v4/disk_content_statistics_bg.9.png" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="-1" android:layout_height="24dp">
+		<View android:layout_width="67dp" android:layout_height="-1" />
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="18dp" android:textColor="ff1a9fff" android:id="false" android:layout_width="-2" android:layout_height="-1" android:text="Size" />
+			<View android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<TextView android:textSize="18dp" android:textColor="ff1a9fff" android:gravity="17" android:id="false" android:layout_width="0dp" android:layout_height="-1" android:text="File/SD" android:layout_weight="{4:1065353216}" />
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+			<View android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="18dp" android:textColor="ff1a9fff" android:gravity="5" android:id="false" android:layout_width="-2" android:layout_height="-1" android:text="Num" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="0" android:id="false" android:background="res/drawable-hdpi-v4/disk_content_statistics_bg.9.png" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="-1" android:layout_height="24dp" android:layout_alignParentBottom="true">
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-1" android:text="Total:" />
+			<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+			<View android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<LinearLayout android:gravity="1" android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="18dp" android:textColor="ffff00" android:id="false" android:layout_width="-2" android:layout_height="-1" android:text="Used:" />
+			<TextView android:textSize="18dp" android:textColor="ffff00" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+			<View android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="18dp" android:textColor="ff88e01d" android:id="false" android:layout_width="-2" android:layout_height="-1" android:text="Avail:" />
+			<TextView android:textSize="18dp" android:textColor="ff88e01d" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

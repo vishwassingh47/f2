@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:layout_width="-1" android:layout_height="-1">
+	<TextView android:textColor="ffcccccc" android:gravity="17" android:layout_gravity="17" android:id="resourceId:0x1020004" android:layout_width="-1" android:layout_height="-1" android:text="Empty Folder" />
+	<RelativeLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+		<android.support.v7.widget.RecyclerView android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-2" />
+		<LinearLayout android:gravity="17" android:id="false" android:background="64000" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true">
+			<ProgressBar android:id="false" android:layout_width="24dp" android:layout_height="24dp" style="@style/ProgressBar" />
+			<TextView android:textSize="24dp" android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Loading more…" />
+		</LinearLayout>
+		<com.estrongs.android.widget.ESViewStub android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_above="false" android:layout_alignParentTop="true" />
+		<LinearLayout android:gravity="17" android:id="false" android:background="64000" android:visibility="1" android:layout_width="-1" android:layout_height="-2" android:layout_alignBottom="false">
+			<ProgressBar android:id="false" android:layout_width="24dp" android:layout_height="24dp" style="@style/ProgressBar" />
+			<TextView android:textSize="24dp" android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Loading more…" />
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<ProgressBar android:layout_width="-2" android:layout_height="-2" style="@style/ProgressBar" />
+		<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" />
+	</LinearLayout>
+</FrameLayout>

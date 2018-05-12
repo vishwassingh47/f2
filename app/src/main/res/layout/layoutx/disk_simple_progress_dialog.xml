@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="1" android:id="false" android:paddingLeft="16dp" android:paddingTop="24dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:layout_width="-1" android:layout_height="-1" android:baselineAligned="false">
+	<TextView android:textSize="21dp" android:textColor="ff000" android:ellipsize="3" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Please wait while counting files size" android:singleLine="true" />
+	<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp">
+		<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="21dp" android:textColor="ff000" android:layout_width="-2" android:layout_height="-2" android:text="Progress" />
+			<TextView android:textSize="21dp" android:textColor="ff000" android:layout_width="-2" android:layout_height="-2" android:text=":" android:singleLine="true" />
+			<TextView android:textSize="21dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			<TextView android:textSize="21dp" android:textColor="ff000" android:layout_width="-2" android:layout_height="-2" android:text="/" android:singleLine="true" />
+			<TextView android:textSize="21dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		</LinearLayout>
+		<TextView android:textSize="21dp" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+	</LinearLayout>
+	<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:max="10000" style="@style/HorizontalProgressBar" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="7dp" android:paddingRight="7dp" android:paddingBottom="7dp" android:layout_width="-1" android:layout_height="-2">
+	<ImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="15dp" android:src="res/drawable-mdpi-v4/fex.png" android:scaleType="7" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+	<RelativeLayout android:layout_width="-1" android:layout_height="-2" android:layout_toRightOf="false" android:layout_centerVertical="true">
+		<TextView android:textSize="21dp" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="" style="@style/NotificationTitle" />
+		<LinearLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="7dp" android:layout_below="false">
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="7dp" android:max="100" style="@style/HorizontalProgressBar" />
+		</LinearLayout>
+		<TextView android:textSize="18dp" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="3dp" android:text="0%" android:layout_below="false" android:layout_alignRight="false" style="@style/NotificationContent" />
+		<TextView android:textSize="18dp" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="3dp" android:text="0" android:layout_below="false" android:layout_alignLeft="false" style="@style/NotificationContent" />
+		<TextView android:textSize="18dp" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="15dp" android:text="Install" android:layout_below="false" style="@style/NotificationContent" />
+	</RelativeLayout>
+</RelativeLayout>

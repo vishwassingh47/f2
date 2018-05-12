@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:layout_width="-1" android:layout_height="64dp">
+	<LinearLayout android:gravity="16" android:orientation="0" android:background="res/drawable-hdpi-v4/notification_sdcard_bg.9.png" android:layout_width="-1" android:layout_height="48dp">
+		<ImageView android:id="false" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="res/drawable-hdpi-v4/home_sdcard.png" android:layout_centerVertical="true" />
+		<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-2" android:layout_marginRight="12dp" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="12dp" android:gravity="80" android:id="false" android:layout_width="-2" android:layout_height="22dp" />
+			<FrameLayout android:layout_width="-1" android:layout_height="22dp" android:layout_marginBottom="4dp">
+				<ProgressBar android:layout_gravity="16" android:id="false" android:layout_width="-1" android:layout_height="12dp" android:progressDrawable="res/drawable/progressbar_notification_sdcard.xml" style="@android:style/Widget.ProgressBar.Horizontal" />
+				<LinearLayout android:layout_gravity="16" android:orientation="0" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-1" android:layout_height="-2">
+					<TextView android:textSize="12dp" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="0" />
+					<TextView android:textSize="12dp" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+					<TextView android:textSize="12dp" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="0" />
+				</LinearLayout>
+			</FrameLayout>
+		</LinearLayout>
+		<ImageView android:gravity="16" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:layout_width="48dp" android:layout_height="48dp" android:src="res/drawable-hdpi-v4/toolbar_refresh.png" android:scaleType="7" />
+		<ImageView android:gravity="16" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:layout_width="48dp" android:layout_height="48dp" android:src="res/drawable-hdpi-v4/toolbar_setting.png" android:scaleType="7" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="1" android:orientation="1" android:paddingBottom="48dp" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/home_block_bg.9.png" android:paddingTop="15dp" android:paddingBottom="15dp" android:visibility="1" android:layout_width="-1" android:layout_height="-2" />
+	<LinearLayout android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/home_block_bg.9.png" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" />
+	<LinearLayout android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/home_block_bg.9.png" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp">
+		<include layout="@layout/home_page_content_container_category" />
+		<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2" />
+	</LinearLayout>
+	<LinearLayout android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/home_block_bg.9.png" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginTop="7dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
+		<include layout="@layout/home_page_content_container_category" />
+		<LinearLayout android:orientation="1" android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2" />
+	</LinearLayout>
+</LinearLayout>

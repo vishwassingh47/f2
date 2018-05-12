@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:paddingBottom="14dp" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="14dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:id="false" android:padding="0dp" android:layout_width="-1" android:layout_height="-2" android:text="Please wait…" android:singleLine="true" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:padding="0dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp" android:lineSpacingExtra="4dp" />
+			<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp">
+				<LinearLayout android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="From:" />
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:text="To:" />
+				</LinearLayout>
+				<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:id="false" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+					<TextView android:textSize="21dp" android:textColor="ff2878e6" android:ellipsize="3" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp" android:singleLine="true" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp">
+			<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Current Progress" android:maxLines="1" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="10dp" android:maxLines="1" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="21" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="0%" android:maxLines="1" android:singleLine="true" />
+			</LinearLayout>
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="18dp" android:layout_marginTop="6dp" style="@style/HorizontalProgressBar" />
+		</LinearLayout>
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="6dp" android:layout_marginRight="16dp">
+			<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Total Progress" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" : " android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="0" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="/" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="0" android:singleLine="true" />
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="21" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="0%" android:singleLine="true" />
+			</LinearLayout>
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="18dp" android:layout_marginTop="6dp" style="@style/HorizontalProgressBar" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="5dp" android:layout_marginRight="16dp" android:baselineAligned="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Remaining Time:" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="21" android:id="false" android:layout_width="-1" android:layout_height="-2" android:singleLine="true" />
+		</LinearLayout>
+		<LinearLayout android:gravity="16" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp">
+			<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="5dp" android:src="res/drawable-hdpi-v4/prompt.png" />
+			<TextView android:textSize="18dp" android:textColor="ffb5b5b5" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:background="res/drawable/action_button_highlight_bg.xml" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="2" android:layout_width="-2" android:layout_height="45dp" android:text="Clean Now" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

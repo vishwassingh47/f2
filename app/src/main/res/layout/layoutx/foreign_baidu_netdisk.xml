@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="5" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<ListView android:id="false" android:layout_width="-1" android:layout_height="-2" android:listSelector="res/drawable/popupbox_listview_selector.xml" android:cacheColorHint="0000" android:divider="res/drawable-hdpi-v4/toolbar_search_sp.9.png" />
+	<View android:id="false" android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="1dp" />
+	<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-2" android:layout_height="72dp" android:layout_marginRight="18dp">
+		<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="No Account?Click" />
+		<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" " />
+		<TextView android:textSize="18dp" android:textColor="ff069fb" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Register" />
+	</LinearLayout>
+</LinearLayout>

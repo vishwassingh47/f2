@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TextView android:textSize="27dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="14dp" android:text="Your system forbids ES from writing on external SD card(check https://code.google.com/p/android/issues/detail?id=67570), so ES can only write on it after rooted." />
+	<ProgressBar android:layout_gravity="17" android:id="false" android:background="0000" android:visibility="1" android:layout_width="96dp" android:layout_height="96dp" style="@style/ProgressBar" />
+</FrameLayout>

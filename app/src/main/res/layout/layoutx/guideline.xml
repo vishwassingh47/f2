@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+	<View android:id="false" android:visibility="2" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+	<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1077936128}">
+		<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="0dp" android:layout_marginTop="62dp" android:layout_weight="{4:1065353216}">
+			<LinearLayout android:orientation="0" android:id="false" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1055286886}">
+				<View android:id="false" android:visibility="2" android:layout_width="69dp" android:layout_height="-1" />
+				<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/guideline_longpress.png" />
+				<LinearLayout android:orientation="1" android:paddingLeft="6dp" android:layout_width="-2" android:layout_height="-1">
+					<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:id="false" android:padding="6dp" android:layout_width="-1" android:layout_height="96dp" android:text="Long press" />
+					<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:padding="6dp" android:layout_width="-1" android:layout_height="-2" android:text="Long press and drag" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1057803469}">
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1082130432}" />
+				<LinearLayout android:orientation="0" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1086324736}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/guideline_zoom.png" android:scaleType="5" />
+					<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:padding="6dp" android:layout_width="-2" android:layout_height="-1" android:text="Zoom" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:padding="6dp" android:layout_width="-1" android:layout_height="-2" android:text="Slide" />
+			<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-1" android:layout_height="81dp" android:src="res/drawable-hdpi-v4/guideline_slide.png" android:scaleType="5" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

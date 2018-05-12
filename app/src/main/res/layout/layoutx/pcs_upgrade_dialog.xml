@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2">
+	<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Your account has not been verified.
+
+To ensure the security of your pcs account, verify code will be sent to your phone by SMS." />
+	<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp">
+		<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="Please input verification code" android:layout_weight="{4:1065353216}" android:inputType="2" style="@style/editInputText" />
+		<Button android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/popupbox_button_copy_selector.xml" android:layout_width="135dp" android:layout_height="51dp" android:layout_marginLeft="10dp" android:text="Resend the verification code" android:singleLine="true" />
+	</LinearLayout>
+	<LinearLayout android:gravity="3" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp">
+		<TextView android:textSize="22dp" android:textColor="ff069fb" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="
+Press next to input the verify code in SMS." />
+	</LinearLayout>
+</LinearLayout>

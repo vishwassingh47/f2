@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:paddingLeft="18dp" android:paddingTop="19dp" android:paddingRight="18dp" android:paddingBottom="18dp" android:layout_width="-1" android:layout_height="-1">
+		<TextView android:textSize="20dp" android:textColor="ff1a9fff" android:gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:text="Share" />
+		<FrameLayout android:orientation="1" android:scrollbars="512" android:layout_width="-1" android:layout_height="-2">
+			<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:paddingTop="5dp" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" android:minWidth="300dp">
+				<LinearLayout android:orientation="1" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1">
+					<LinearLayout android:orientation="0" android:paddingTop="5dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="10dp">
+						<TextView android:textSize="16dp" android:textColor="ff000" android:gravity="17" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:text="Share" />
+						<TextView android:textSize="16dp" android:textColor="ff2878e6" android:ellipsize="3" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_marginTop="6dp" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout android:orientation="0" android:paddingTop="5dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="109117unknown unit:0x21" android:layout_marginRight="109117unknown unit:0x21" android:layout_marginBottom="109117unknown unit:0x21">
+					<Button android:textSize="30dp" android:textColor="ff000" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_button_confirm_window_left.9.png" android:layout_width="0dp" android:layout_height="-2" android:text="Cancel" android:layout_weight="{4:1056964608}" />
+					<Button android:textSize="30dp" android:textColor="ff000" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_button_cancel_window_right.9.png" android:layout_width="0dp" android:layout_height="-2" android:text="Hide" android:layout_weight="{4:1056964608}" />
+				</LinearLayout>
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

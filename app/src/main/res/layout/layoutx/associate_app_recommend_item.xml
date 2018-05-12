@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clickable="false" android:layout_width="-1" android:layout_height="120dp">
+	<ImageView android:id="false" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="10dp" android:src="res/drawable-hdpi-v4/app_pic_net_instagram.png" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+	<ImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="10dp" android:src="res/drawable-hdpi-v4/popupbox_radio_button_unchecked.png" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+	<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:text="TextView" android:layout_toLeftOf="false" android:layout_toRightOf="false" android:layout_alignTop="false" />
+	<TextView android:textColor="ffb5b5b5" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="TextView" android:layout_alignLeft="false" android:layout_alignRight="false" android:layout_alignBottom="false" />
+</RelativeLayout>

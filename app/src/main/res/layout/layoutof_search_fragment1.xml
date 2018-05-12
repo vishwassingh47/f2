@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <!--layer1-->
+    <include layout="@layout/layoutof_layer1"/>
+
+    <!--layer stack -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/stackLinearLayout_searchPager"
+        >
+
+    </LinearLayout>
+
+    <!--edittext and cancel    LAYER 2-->
+    <LinearLayout
+        android:id="@+id/layer2_searchPager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#4caf50"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:hint="Search in internal storage"
+            android:maxLines="1"
+            android:id="@+id/searchPager_editText"
+            android:singleLine="true"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:src="@drawable/backspace"
+            android:tint="#f44336"
+            android:clickable="true"
+            android:id="@+id/searchPager_backspace"
+            />
+
+
+   </LinearLayout>
+
+
+    <!--progress-->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/searchPager_progress"
+        android:max="100"
+        android:indeterminateOnly="true"
+        />
+
+    <!--deeper search-->
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File Not Found?? Try Deeper Search by clicking here"
+        android:gravity="center"
+        android:id="@+id/searchPager_deep_search"
+        android:clickable="true"
+        />
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_searchPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+
+    <!--art layout-->
+    <include layout="@layout/layoutof_art_layout"/>
+
+
+</LinearLayout>

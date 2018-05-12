@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<ProgressBar android:id="false" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="12dp" android:indeterminateDrawable="res/drawable/progress_drawable.xml" android:layout_centerInParent="true" android:layout_centerHorizontal="false" android:layout_centerVertical="false" />
+	<ScrollView android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+			<TableLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp" android:stretchColumns="1" android:shrinkColumns="1">
+				<TableRow>
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Account" android:singleLine="true" />
+					<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" style="@style/editInputText" />
+				</TableRow>
+				<TableRow android:layout_marginTop="12dp">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Password" android:singleLine="true" />
+					<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:inputType="129" style="@style/editInputText" />
+				</TableRow>
+				<TableRow android:id="false" android:visibility="2" android:layout_marginTop="12dp">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Verification code" android:singleLine="true" />
+					<RelativeLayout android:layout_width="-2" android:layout_height="-2">
+						<FrameLayout android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="4dp" android:layout_alignParentRight="true">
+							<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:scaleType="3" />
+							<RelativeLayout android:layout_width="-1" android:layout_height="-1">
+								<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+							</RelativeLayout>
+						</FrameLayout>
+						<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:maxLines="1" android:lines="1" android:maxLength="10" android:layout_toLeftOf="false" style="@style/editInputText" />
+					</RelativeLayout>
+				</TableRow>
+				<TableRow android:id="false" android:layout_marginTop="12dp">
+					<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:paddingRight="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Display as" android:singleLine="true" />
+					<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" style="@style/editInputText" />
+				</TableRow>
+			</TableLayout>
+			<LinearLayout android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp" android:layout_marginBottom="14dp">
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ff069fb" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-2" android:layout_height="-2" android:text="Forgot password" />
+			</LinearLayout>
+			<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="16dp">
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:background="res/drawable/background_content_grid.xml" android:focusable="true" android:layout_width="-2" android:layout_height="-2">
+					<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="No Account?Click" />
+					<TextView android:textSize="18dp" android:textColor="80444444" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text=" " />
+					<TextView android:textSize="18dp" android:textColor="ff069fb" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Register" />
+				</LinearLayout>
+			</LinearLayout>
+			<View android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="1dp" />
+			<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginTop="16dp" android:layout_marginRight="10dp" android:layout_marginBottom="2dp">
+				<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Login using 3rd account" />
+				<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable/background_content_grid.xml" android:paddingTop="6dp" android:paddingBottom="6dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:src="res/drawable-hdpi-v4/pcs_login_renren.png" android:scaleType="7" android:layout_weight="{4:1065353216}" />
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable/background_content_grid.xml" android:paddingTop="6dp" android:paddingBottom="6dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:src="res/drawable-hdpi-v4/pcs_login_weibo.png" android:scaleType="7" android:layout_weight="{4:1065353216}" />
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable/background_content_grid.xml" android:paddingTop="6dp" android:paddingBottom="6dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:src="res/drawable-hdpi-v4/pcs_login_qq.png" android:scaleType="7" android:layout_weight="{4:1065353216}" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

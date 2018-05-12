@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:id="false" android:background="ffffffff" android:layout_width="-1" android:layout_height="-1">
+	<RelativeLayout android:id="false" android:background="ffffffff" android:layout_width="-1" android:layout_height="75dp">
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1" android:baselineAligned="false">
+			<TextView android:textSize="24dp" android:textColor="ffcfdce5" android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:layout_width="0dp" android:layout_height="-1" android:text="Windows" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="24dp" android:textColor="ffcfdce5" android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:layout_width="0dp" android:layout_height="-1" android:text="Clipboard" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<com.estrongs.android.ui.navigation.TabIndicatorView android:id="false" android:layout_width="-1" android:layout_height="6dp" android:layout_alignParentBottom="true" />
+	</RelativeLayout>
+	<View android:background="ff31afde" android:visibility="2" android:layout_width="-1" android:layout_height="1dp" />
+	<com.estrongs.android.widget.RealViewSwitcher android:id="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}" />
+	<LinearLayout android:gravity="17" android:orientation="0" android:id="false" android:background="res/drawable-hdpi-v4/window_toolbar_bg.9.png" android:layout_width="-1" android:layout_height="81dp" />
+</LinearLayout>

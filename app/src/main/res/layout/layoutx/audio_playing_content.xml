@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<RelativeLayout android:gravity="17" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/app_audio_album_default_bg.9.png" android:padding="4dp" android:layout_width="405dp" android:layout_height="405dp" android:src="res/drawable-hdpi-v4/app_audio_album_default_icon.png" android:scaleType="3" android:layout_centerInParent="true" />
+		<View android:background="80000" android:layout_width="393dp" android:layout_height="60dp" android:layout_marginBottom="4dp" android:layout_alignBottom="false" android:layout_centerHorizontal="true" />
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="res/drawable-hdpi-v4/toolbar_websearch.png" android:scaleType="7" android:layout_alignRight="false" android:layout_alignBottom="false" />
+	</RelativeLayout>
+	<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:background="80000" android:padding="12dp" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="48dp" android:text="0:00" />
+		<SeekBar android:id="false" android:layout_width="0dp" android:layout_height="30dp" android:progressDrawable="res/drawable/audio_seekbar_progress.xml" android:thumb="res/drawable/audio_seekbar_thumb_selector.xml" android:thumbOffset="0dp" android:layout_weight="{4:1065353216}" style="?android:attr/progressBarStyleHorizontal" />
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="5" android:id="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="48dp" android:text="0:00" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:paddingLeft="10dp" android:paddingTop="16dp" android:paddingRight="10dp" android:paddingBottom="16dp" android:layout_width="-1" android:layout_height="-2" android:minWidth="300dp">
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+			<EditText android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:paddingLeft="3dp" android:layout_width="0dp" android:layout_height="-2" android:hint="Input a new name" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="50" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:text="+" android:singleLine="true" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:text="Number" android:singleLine="true" />
+			<RadioButton android:textColor="ffffffff" android:id="false" android:background="res/drawable/radio_button_background.xml" android:focusable="true" android:layout_width="48dp" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" />
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="8dp">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="8dp" android:text="Start number" android:singleLine="true" />
+			<EditText android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:paddingLeft="3dp" android:layout_width="0dp" android:layout_height="-2" android:layout_marginBottom="8dp" android:hint="1,01,001..." android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="8" android:numeric="1" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<ImageView android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" />
+		<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+			<EditText android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:paddingLeft="3dp" android:layout_width="0dp" android:layout_height="-2" android:hint="Input a new name" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="50" android:layout_weight="{4:1065353216}" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:text="+" android:singleLine="true" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:maxWidth="110dp" android:text="Original filename" android:singleLine="true" />
+			<RadioButton android:textColor="ffffffff" android:id="false" android:background="res/drawable/radio_button_background.xml" android:focusable="true" android:layout_width="48dp" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" />
+		</LinearLayout>
+		<ImageView android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" />
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="-2" android:layout_height="-2" android:text="Rename extension name" android:singleLine="true" />
+			<EditText android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:paddingLeft="3dp" android:layout_width="0dp" android:layout_height="-2" android:hint="Default" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="20" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

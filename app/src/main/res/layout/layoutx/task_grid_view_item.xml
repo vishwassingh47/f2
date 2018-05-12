@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+	<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="16" android:id="false" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="72dp" android:layout_height="72dp" />
+	<FrameLayout android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+			<TextView android:textSize="21dp" android:ellipsize="2" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="0dp" android:singleLine="true" android:layout_weight="{4:1057803469}" />
+			<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1055286886}">
+				<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+			<LinearLayout android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:textSize="21dp" android:textColor="ff000" android:ellipsize="2" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			</LinearLayout>
+			<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="18dp" android:max="100" style="@style/HorizontalProgressBar" />
+			<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:layout_width="-1" android:layout_height="-2">
+				<LinearLayout android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+					<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" />
+					<LinearLayout android:gravity="5" android:layout_width="-1" android:layout_height="-1">
+						<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+						<TextView android:textSize="18dp" android:textColor="ffcccccc" android:layout_width="-2" android:layout_height="-2" android:text="/" />
+						<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" />
+					</LinearLayout>
+				</LinearLayout>
+				<View android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" />
+				<LinearLayout android:id="false" android:visibility="1" android:layout_width="-2" android:layout_height="-2">
+					<TextView android:textSize="18dp" android:textColor="ffcccccc" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:text="Speed" />
+					<TextView android:textSize="18dp" android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</FrameLayout>
+	<CheckBox android:layout_gravity="16" android:id="false" android:padding="0dp" android:focusable="false" android:visibility="1" android:clickable="false" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginRight="0dp" android:button="res/drawable/checkbox_grid_file_drawable.xml" />
+</LinearLayout>

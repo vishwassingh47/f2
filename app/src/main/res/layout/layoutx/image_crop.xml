@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<RelativeLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+		<view android:id="false" android:background="55000" android:layout_width="-1" android:layout_height="-1" android:layout_x="0dp" android:layout_y="0dp" class="com.estrongs.android.pop.app.imageviewer.CropImageView" />
+		<RelativeLayout android:orientation="0" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+			<Button android:id="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="100dp" android:text="Save" android:layout_alignParentLeft="true" />
+			<Button android:id="false" android:layout_width="-2" android:layout_height="-2" android:minWidth="100dp" android:text="Discard" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+		<TextView android:textSize="24dp" android:gravity="19" android:id="false" android:paddingLeft="10dp" android:visibility="2" android:layout_width="-2" android:layout_height="60dp" android:text="title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</FrameLayout>

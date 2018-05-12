@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:gravity="17" android:orientation="1" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="0dp" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1080033280}">
+		<TextView android:textSize="24dp" android:textColor="ff000" android:gravity="1" android:id="false" android:paddingBottom="2dp" android:layout_width="-1" android:layout_height="-2" android:text="Network Status" />
+		<TextView android:textSize="21dp" android:textColor="ff5e5e5e" android:gravity="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Network Status" />
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_margin="4dp" />
+		<TextView android:textSize="21dp" android:textColor="ff000" android:gravity="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="You can manage your device through your PC after you turn on the service" />
+		<EditText android:enabled="false" android:textSize="24dp" android:textColor="ff000" android:gravity="49" android:id="false" android:background="res/drawable-hdpi-v4/remote_address_bg.9.png" android:padding="0dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="18dp" android:layout_marginTop="0dp" android:layout_marginRight="18dp" style="@style/editInputText" />
+	</LinearLayout>
+	<LinearLayout android:gravity="17" android:orientation="1" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+		<Button android:textSize="27dp" android:id="false" android:background="res/drawable/remote_button_background.xml" android:layout_width="225dp" android:layout_height="-2" android:text="Turn on" />
+	</LinearLayout>
+</LinearLayout>

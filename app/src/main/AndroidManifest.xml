@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sahil.f2">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission-sdk-23 android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBGHxodYLDwpcAD3fVM9pDEM3Xoukl2qZk" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WifiSendActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+        <activity android:name=".WifiReceiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name="com.dropbox.core.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask">
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-s0hacfpq5knp90o" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".HomeServicesProvider.CopyService1"/>
+        <service android:name=".HomeServicesProvider.CopyService2"/>
+        <service android:name=".HomeServicesProvider.DownloadService1"/>
+        <service android:name=".HomeServicesProvider.DownloadService2"/>
+        <service android:name=".HomeServicesProvider.DownloadService3"/>
+        <service android:name=".HomeServicesProvider.DownloadService4"/>
+        <service android:name=".HomeServicesProvider.DownloadService5"/>
+        <service android:name=".HomeServicesProvider.DownloadService6"/>
+        <service android:name=".HomeServicesProvider.UploadService1"/>
+        <service android:name=".HomeServicesProvider.UploadService2"/>
+        <service android:name=".HomeServicesProvider.UploadService3"/>
+        <service android:name=".HomeServicesProvider.UploadService4"/>
+        <service android:name=".HomeServicesProvider.UploadService5"/>
+        <service android:name=".HomeServicesProvider.UploadService6"/>
+        <service android:name=".HomeServicesProvider.DeletingService1"/>
+        <service android:name=".HomeServicesProvider.DeletingService2"/>
+        <service android:name=".HomeServicesProvider.InstallService"/>
+        <service android:name=".HomeServicesProvider.UnInstallService"/>
+
+        <service android:name=".HomeServicesProvider.WifiSendService"/>
+
+
+
+    </application>
+
+</manifest>

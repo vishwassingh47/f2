@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <!--title-->
+    <TextView
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITLE GOES HERE"
+        android:textStyle="bold"
+        android:id="@+id/dialog5_title"
+        android:background="@color/main_theme_red"
+        android:textColor="@color/white"
+
+        />
+
+    <!--Border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        >
+
+    </LinearLayout>
+
+
+    <!--listView titles-->
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="S.No"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="App Name"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <!--Border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        >
+    </LinearLayout>
+
+    <!--progress-->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/dialog5_progress"
+        android:max="100"
+        android:indeterminateOnly="true"
+        />
+
+
+    <ListView
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog5_list"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:scrollbarSize="10dp"
+        android:scrollbars="vertical"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        >
+    </ListView>
+
+    <!--details-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/dialog5_details"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:text="xsajcbj bajjb  mcbxjsbj jcb Successfully"
+        android:textColor="@color/main_theme_red"
+        />
+
+    <!--details-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="12dp"
+        android:text="Note:If Apps were not installed/uninstalled even when the operation succeeds,Reboot your device."
+        android:textColor="@color/black"
+        />
+
+    <!--Buttons-->
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/dialog5_cancel"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIDE/CLOSE"
+            android:id="@+id/dialog5_hide_close"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

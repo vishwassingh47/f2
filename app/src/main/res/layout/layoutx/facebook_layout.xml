@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:background="res/drawable/cleaner_card_bg_selector.xml" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginTop="15dp">
+		<ImageView android:layout_gravity="16" android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="10dp" android:src="res/drawable-xhdpi-v4/card_icon_default.png" android:scaleType="3" />
+		<TextView android:textSize="18dp" android:textColor="ffffffff" android:ellipsize="3" android:layout_gravity="16" android:id="false" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="-2" android:scrollHorizontally="false" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+		<Button android:textSize="15sp" android:textColor="ffffff" android:gravity="17" android:id="false" android:background="res/drawable/action_button_highlight_bg.xml" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="40dp" android:layout_marginRight="5dp" android:minWidth="90dp" android:text="button" />
+	</LinearLayout>
+	<FrameLayout android:layout_gravity="80" android:layout_width="-1" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_weight="{4:1065353216}">
+		<com.estrongs.android.pop.esclasses.ESScreenFitImageView android:id="false" android:layout_width="-1" android:layout_height="175dp" android:src="res/drawable-xhdpi-v4/card_functionimg_default.9.png" android:scaleType="1" android:adjustViewBounds="true" />
+		<ImageView android:layout_gravity="53" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-xhdpi-v4/corner.png" />
+	</FrameLayout>
+	<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" android:layout_marginBottom="15dp">
+		<TextView android:textSize="15dp" android:textColor="666666" android:ellipsize="3" android:layout_gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:maxLines="2" android:scrollHorizontally="false" android:layout_weight="{4:1065353216}" />
+		<ImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="3dp" android:layout_marginTop="5dp" android:src="res/drawable-hdpi-v4/toolbar_menu_expand.png" android:scaleType="6" />
+	</LinearLayout>
+</LinearLayout>

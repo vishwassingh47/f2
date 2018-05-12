@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:padding="8dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1" android:shrinkColumns="1">
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:layout_gravity="16" android:id="false" android:layout_marginRight="6dp" android:text="IP Address" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="IP Address" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:layout_gravity="16" android:id="false" android:layout_marginRight="6dp" android:text="Port" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="5555" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Display as" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="Click to edit, can be empty" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

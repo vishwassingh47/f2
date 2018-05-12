@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp"
+    android:background="#9e9e9e"
+    >
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/my_icon_delete"
+        android:gravity="center_vertical"
+        android:id="@+id/row6_icon"
+        />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_weight="5"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="name of file"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/row6_name"
+        />
+
+</LinearLayout>

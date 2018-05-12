@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="1" android:id="false" android:background="res/drawable/cleaner_card_bg_selector.xml" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+	<LinearLayout android:orientation="0" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="15dp">
+		<ImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-xhdpi-v4/card_icon_default.png" />
+		<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="10dp">
+			<TextView android:textAppearance="{2:16842816}" android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="title" />
+			<TextView android:textAppearance="{2:16842817}" android:textSize="15dp" android:textColor="ff999999" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="5dp" android:text="subtitle" />
+			<ImageView android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="150dp" android:layout_marginTop="10dp" android:src="res/drawable-xhdpi-v4/card_functionimg_default.9.png" android:scaleType="1" />
+			<TextView android:textSize="16dp" android:textColor="ff35a4f3" android:gravity="85" android:layout_gravity="85" android:id="false" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="-2" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_marginBottom="11dp" android:minWidth="90dp" android:text="button" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

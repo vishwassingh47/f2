@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:padding="8dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1" android:shrinkColumns="1">
+		<TableRow android:id="false" android:focusable="false" android:focusableInTouchMode="false">
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:focusable="false" android:focusableInTouchMode="false" android:text="Old Password : " />
+			<EditText android:textColor="ffffffff" android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:cursorVisible="true" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:id="false">
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Username : " />
+			<EditText android:textColor="ffffffff" android:id="false" android:cursorVisible="true" android:inputType="1" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:focusable="false" android:focusableInTouchMode="false" android:layout_marginTop="8dp">
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:focusable="false" android:focusableInTouchMode="false" android:text="New Password : " />
+			<EditText android:textColor="ffffffff" android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:cursorVisible="true" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:id="false" android:focusable="false" android:focusableInTouchMode="false" android:layout_marginTop="8dp">
+			<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:focusable="false" android:focusableInTouchMode="false" android:text="Confirm password:" />
+			<EditText android:textColor="ffffffff" android:id="false" android:focusable="true" android:focusableInTouchMode="true" android:cursorVisible="true" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

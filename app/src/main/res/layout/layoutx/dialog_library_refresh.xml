@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:gravity="17" android:orientation="0" android:id="false" android:background="res/drawable/popupbox_listview_selector.xml" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2" android:minHeight="60dp">
+		<TextView android:textSize="27dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Refresh only" android:singleLine="false" />
+	</LinearLayout>
+	<View android:id="false" android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="1dp" />
+	<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:background="res/drawable/popupbox_listview_selector.xml" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2" android:minHeight="60dp">
+		<TextView android:textSize="27dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Notify System Refresh" android:singleLine="true" />
+		<TextView android:textSize="21dp" android:textColor="ffb5b5b5" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="It costs time, depends on your device" android:singleLine="false" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<RelativeLayout android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/search_category_bg_left.9.png" android:layout_width="-2" android:layout_height="-1" />
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/search_category_bg_middle.9.png" android:layout_width="-2" android:layout_height="-1" />
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/search_category_bg_right.9.png" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+		</LinearLayout>
+		<LinearLayout android:gravity="1" android:orientation="1" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentBottom="true">
+			<TextView android:textSize="18dp" android:textColor="ff000" android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="0dp" android:text="Select a category" />
+			<LinearLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false">
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_all.png" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_image.png" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_music.png" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_video.png" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_apk.png" />
+				</LinearLayout>
+				<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+					<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/search_category_book.png" />
+				</LinearLayout>
+			</LinearLayout>
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" />
+			<LinearLayout android:gravity="16" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingTop="10dp" android:paddingBottom="10dp" android:focusable="true" android:layout_width="-1" android:layout_height="-2">
+				<TextView android:textSize="18dp" android:textColor="ff000" android:gravity="16" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Advanced search" />
+				<LinearLayout android:gravity="5" android:layout_width="-1" android:layout_height="-2">
+					<com.estrongs.android.pop.esclasses.ESImageView android:gravity="16" android:id="false" android:layout_width="45dp" android:layout_height="45dp" android:src="res/drawable-hdpi-v4/toolbar_setting.png" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

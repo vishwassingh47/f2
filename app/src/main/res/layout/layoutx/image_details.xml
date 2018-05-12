@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:orientation="1" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:gravity="16" android:orientation="0" android:paddingTop="10dp" android:layout_width="-1" android:layout_height="-2">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="96dp" android:layout_height="96dp" android:layout_marginRight="5dp" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:paddingRight="6dp" android:layout_width="-2" android:layout_height="-2" android:singleLine="false" />
+		</LinearLayout>
+		<TableLayout android:paddingLeft="5dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="10dp">
+			<TableRow>
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Size:" />
+				<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" />
+			</TableRow>
+			<TableRow android:id="false">
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Date taken:" />
+				<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" />
+			</TableRow>
+			<TableRow android:id="false">
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Resolution:" />
+				<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" android:layout_width="-1" android:layout_height="-2" />
+			</TableRow>
+			<TableRow android:id="false" android:visibility="2">
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Manufacturer:" />
+				<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" android:layout_width="-1" android:layout_height="-2" />
+			</TableRow>
+			<TableRow android:id="false" android:visibility="2">
+				<TextView android:textColor="ffffffff" android:gravity="5" android:id="false" android:text="Model:" />
+				<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" android:layout_width="-1" android:layout_height="-2" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

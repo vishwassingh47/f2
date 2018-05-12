@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="16" android:orientation="1" android:id="false" android:background="res/drawable-hdpi-v4/window_addressbar_bg.9.png" android:layout_width="-1" android:layout_height="40dp" app:layout_scrollFlags="5">
+	<com.estrongs.android.pop.esclasses.ESHorizontalScrollView android:id="false" android:scrollbars="0" android:layout_width="-1" android:layout_height="-2">
+		<com.estrongs.android.ui.addressbar.AdvancedAddressBar android:id="false" android:layout_width="-2" android:layout_height="39dp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" />
+	</com.estrongs.android.pop.esclasses.ESHorizontalScrollView>
+</LinearLayout>

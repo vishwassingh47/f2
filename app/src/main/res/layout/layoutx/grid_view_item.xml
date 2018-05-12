@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.estrongs.android.ui.drag.DragGrid xmlns:android="http://schemas.android.com/apk/res/android" android:padding="0dp" android:descendantFocusability="2" android:layout_width="-1" android:layout_height="-2">
+	<RelativeLayout android:padding="6dp" android:layout_width="-1" android:layout_height="-2">
+		<com.estrongs.android.pop.esclasses.ESFixedSizeImageView android:id="false" android:paddingTop="0dp" android:layout_width="96dp" android:layout_height="96dp" android:layout_centerHorizontal="true" />
+		<android.support.v7.widget.AppCompatCheckBox android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/checkbox_grid_file_drawable.xml" android:layout_alignRight="false" android:layout_alignBottom="false" />
+		<TextView android:textSize="24dp" android:textColor="ff000" android:gravity="49" android:id="false" android:layout_width="-1" android:layout_height="-1" android:lines="2" android:drawablePadding="0dp" android:layout_below="false" style="@style/textShadow" />
+	</RelativeLayout>
+</com.estrongs.android.ui.drag.DragGrid>

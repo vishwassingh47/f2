@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:id="false" android:focusable="false" android:layout_width="-1" android:layout_height="-2" android:minHeight="60dp">
+	<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="16" android:id="false" android:focusable="false" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginLeft="12dp" android:layout_marginRight="10dp" android:src="res/drawable-mdpi-v4/fex.png" android:scaleType="3" />
+	<LinearLayout android:orientation="1" android:id="false" android:focusable="false" android:layout_width="0dp" android:layout_height="-2" android:minHeight="60dp" android:layout_weight="{4:1065353216}">
+		<TextView android:textSize="24dp" android:textStyle="1" android:textColor="ffffffff" android:gravity="83" android:layout_gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp" android:scrollHorizontally="false" android:singleLine="true" />
+		<TextView android:textSize="21dp" android:textColor="ffcccccc" android:gravity="51" android:layout_gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-2" android:scrollHorizontally="false" android:singleLine="false" />
+	</LinearLayout>
+	<LinearLayout android:orientation="0" android:focusable="false" android:layout_width="-2" android:layout_height="-1" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+		<Button android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:layout_gravity="17" android:id="false" android:background="res/drawable/content_button_bg_selector.xml" android:focusable="true" android:layout_width="75dp" android:layout_height="45dp" android:text="Restore" />
+		<Button android:textSize="18dp" android:textColor="ffffffff" android:gravity="17" android:layout_gravity="17" android:id="false" android:background="res/drawable/content_button_bg_selector.xml" android:focusable="true" android:layout_width="75dp" android:layout_height="45dp" android:layout_marginLeft="4dp" android:text="Open" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2">
+		<LinearLayout android:gravity="48" android:orientation="0" android:padding="6dp" android:layout_width="-1" android:layout_height="-2">
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="File:" />
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" />
+		</LinearLayout>
+		<View android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" />
+		<LinearLayout android:orientation="1" android:padding="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp" android:minHeight="90dp">
+			<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginRight="5dp">
+				<TextView android:textSize="27dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="MD5" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/popupbox_button_copy_selector.xml" android:layout_width="-2" android:layout_height="45dp" android:layout_marginRight="6dp" android:minWidth="72dp" android:text="Copy" />
+			</LinearLayout>
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="6dp" android:text="N/A" />
+		</LinearLayout>
+		<View android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="-2" />
+		<LinearLayout android:orientation="1" android:padding="6dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="5dp" android:minHeight="102dp">
+			<LinearLayout android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginRight="5dp">
+				<TextView android:textSize="27dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="SHA-1" android:layout_weight="{4:1065353216}" />
+				<Button android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/popupbox_button_copy_selector.xml" android:layout_width="-2" android:layout_height="45dp" android:layout_marginRight="6dp" android:minWidth="72dp" android:text="Copy" />
+			</LinearLayout>
+			<TextView android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="6dp" android:text="N/A" />
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

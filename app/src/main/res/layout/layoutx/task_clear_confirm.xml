@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:padding="15dp" android:layout_width="-1" android:layout_height="-1">
+	<TextView android:textSize="27dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:text="Confirm Clear the tasks？
+Including %1$s item(s), %2$s Downloading task(s)" />
+	<CheckBox android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="10dp" android:button="res/drawable/checkbox_grid_file_drawable.xml" android:text="Delete Source files too" />
+</LinearLayout>

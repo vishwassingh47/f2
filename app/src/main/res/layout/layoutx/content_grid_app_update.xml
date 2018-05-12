@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:background="res/drawable-hdpi-v4/content_top_float_label.9.png" android:paddingLeft="16dp" android:visibility="2" android:layout_width="-1" android:layout_height="72dp">
+		<TextView android:textSize="24dp" android:textColor="ffffffff" android:gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}" />
+		<Button android:textSize="21dp" android:textColor="ff000" android:gravity="17" android:id="false" android:background="res/drawable/content_button_bg_selector.xml" android:paddingLeft="5dp" android:paddingRight="5dp" android:clickable="true" android:layout_width="-2" android:layout_height="57dp" android:layout_marginRight="12dp" android:text="Incremental Update-Save traffic cost" />
+	</LinearLayout>
+	<FrameLayout android:gravity="17" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+		<TextView android:gravity="17" android:layout_gravity="17" android:id="resourceId:0x1020004" android:layout_width="-1" android:layout_height="-1" android:text="Empty Folder" />
+		<RelativeLayout android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+			<com.handmark.pulltorefresh.library.PtrRecyclerView xmlns:ptr="http://schemas.android.com/apk/res-auto" android:gravity="119" android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" android:stretchMode="2" android:columnWidth="100dp" android:numColumns="-1" android:layout_alignParentTop="true" app:ptrMode="3" app:ptrAnimationStyle="1" />
+			<com.estrongs.android.ui.fastscroller.vertical.VerticalRecyclerViewFastScroller android:id="false" android:layout_width="-2" android:layout_height="-1" android:layout_alignParentRight="true" app:rfs_handleBackground="res/drawable-xhdpi-v4/icon_handle.png" />
+		</RelativeLayout>
+		<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+			<ProgressBar android:layout_width="-2" android:layout_height="-2" style="@style/ProgressBar" />
+			<TextView android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

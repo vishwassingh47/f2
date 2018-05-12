@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-1">
+	<TableLayout android:padding="8dp" android:layout_width="-1" android:layout_height="-2" android:minWidth="400dp" android:stretchColumns="1" android:shrinkColumns="1">
+		<TableRow android:gravity="16" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Server" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:hint="FTP Host Server" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:gravity="16" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Port" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:text="21" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Mode" />
+			<RadioGroup android:orientation="0" android:id="false">
+				<RadioButton android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:checked="true" android:button="res/drawable/radio_button_drawable.xml" android:text="Active" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<RadioButton android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:checked="false" android:button="res/drawable/radio_button_drawable.xml" android:text="Passive" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+			</RadioGroup>
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false">
+			<TextView />
+			<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Encryption(https)" />
+		</TableRow>
+		<TableRow android:gravity="16" android:paddingTop="4dp" android:paddingBottom="4dp" android:visibility="2">
+			<TextView />
+			<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:text="Encrypted Transport" />
+		</TableRow>
+		<TableRow android:gravity="16" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Username" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Password" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false">
+			<TextView />
+			<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Anonymous" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="encryption" />
+			<RadioGroup android:orientation="0" android:id="false">
+				<RadioButton android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:checked="true" android:button="res/drawable/radio_button_drawable.xml" android:text="implicit" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+				<RadioButton android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:checked="false" android:button="res/drawable/radio_button_drawable.xml" android:text="explicit" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+			</RadioGroup>
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Passphrases" />
+			<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:layout_height="-2" android:layout_weight="{4:1065353216}" android:inputType="129" style="@style/editInputText" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Private key" />
+			<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="-1" android:layout_height="48dp">
+				<Button android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:text="" android:singleLine="true" />
+			</LinearLayout>
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false">
+			<TextView />
+			<CheckBox android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="36dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Login by private key" />
+		</TableRow>
+		<TableRow android:gravity="16" android:id="false" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Encoding" />
+			<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="-1" android:layout_height="48dp">
+				<Button android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:text="Click to set" />
+			</LinearLayout>
+		</TableRow>
+		<TableRow android:gravity="16" android:paddingTop="4dp" android:paddingBottom="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="3" android:id="false" android:layout_marginRight="6dp" android:text="Display as" />
+			<EditText android:textColor="ffffffff" android:id="false" android:layout_width="0dp" android:hint="Click to edit, can be empty" android:singleLine="true" android:layout_weight="{4:1065353216}" style="@style/editInputText" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

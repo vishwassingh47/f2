@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:id="false" android:paddingTop="45dp" android:paddingBottom="10dp" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:gravity="17" android:layout_gravity="17" android:id="false" android:padding="15dp" android:layout_width="-2" android:layout_height="-2">
+		<ProgressBar android:layout_width="-2" android:layout_height="-2" android:indeterminateDrawable="res/drawable/progress_drawable.xml" style="?android:attr/progressBarStyleSmall" />
+		<TextView android:textColor="ffffffff" android:id="false" android:paddingLeft="5dp" android:layout_width="-2" android:layout_height="-2" android:text="Loading…" />
+	</LinearLayout>
+	<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="17" android:id="false" android:padding="5dp" android:layout_width="-2" android:layout_height="-2" android:scaleType="1" />
+	<LinearLayout android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:id="false" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="-2" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+		<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+	</LinearLayout>
+	<TextView android:textSize="18dp" android:textColor="ffffffff" android:id="false" android:paddingTop="3dp" android:layout_width="-1" android:layout_height="-2" />
+</LinearLayout>

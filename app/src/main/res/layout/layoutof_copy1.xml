@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#9e9e9e"
+    >
+
+    <!--top heading -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="OPERATION 47..."
+            android:textColor="#ffffff"
+            android:id="@+id/copy1_task_name"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/copy"
+            android:id="@+id/copy1_logo"
+            />
+    </LinearLayout>
+
+
+    <!--Border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        >
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!--description -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="NAME :"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="FROM :"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="TO :"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size :"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <!--Border -->
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+        </LinearLayout>
+
+        <!--details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/copy1_name"
+                android:text="vishwas.txt"
+                />
+
+            <!--file path and storage logo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/copy1_from_logo"
+                    android:src="@mipmap/google_drive"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/copy1_from"
+                    android:text="/sdcard/"
+
+                    />
+            </LinearLayout>
+
+            <!--file path and storage logo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/copy1_to_logo"
+                    android:src="@mipmap/google_drive"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/copy1_to"
+                    android:text="/sdcard/"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/copy1_size"
+                android:text="242 GB"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Border -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffffff"
+        >
+    </LinearLayout>
+
+
+    <!--progress info.... -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROGRESS"
+            android:textStyle="bold"
+            android:textColor="#f44336"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 / 76 items"
+            android:id="@+id/copy1_itemsProgress"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copy1_sizeProgress"
+            android:text="24kb / 76mb"
+
+            />
+    </LinearLayout>
+
+
+    <!--progress bar.... -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="56 %"
+            android:textColor="#f44336"
+            android:textStyle="bold"
+            android:id="@+id/copy1_percent"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:progress="79"
+            android:background="@drawable/pb_only_background"
+            android:progressDrawable="@drawable/pb_only_progress"
+            android:indeterminateOnly="false"
+            android:id="@+id/copy1_progressBar"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="32kb/sec"
+            android:gravity="center"
+            android:id="@+id/copy1_speed"
+            />
+
+    </LinearLayout>
+
+
+    <!--Buttons.... -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/copy1_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textColor="#e91e63" />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/copy1_hide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="HIDE"
+            android:textColor="#009688"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

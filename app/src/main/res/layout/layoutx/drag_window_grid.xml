@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="1" android:layout_width="-2" android:layout_height="-2">
+	<TextView android:textSize="18dp" android:textColor="ff4078a5" android:id="false" android:background="res/drawable-hdpi-v4/drag_copy_flag.png" android:paddingLeft="20dp" android:paddingBottom="10dp" android:layout_width="-2" android:layout_height="-2" />
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:padding="4dp" android:layout_width="-2" android:layout_height="-2" android:scaleType="7" android:cropToPadding="true" />
+	<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+</LinearLayout>

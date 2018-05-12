@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-2" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentLeft="true">
+		<RelativeLayout android:layout_width="-2" android:layout_height="-2">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-xhdpi-v4/sample_single_toolbar.png" android:scaleType="7" />
+			<ImageView android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/theme_toolbar_activity_selected.png" android:layout_centerInParent="true" />
+		</RelativeLayout>
+		<TextView android:textSize="18dp" android:textColor="cccccc" android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Single toolbar" />
+	</LinearLayout>
+	<LinearLayout android:gravity="1" android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_alignParentRight="true">
+		<RelativeLayout android:layout_width="-2" android:layout_height="-2">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-xhdpi-v4/sample_double_toolbar.png" android:scaleType="7" />
+			<ImageView android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable-hdpi-v4/theme_toolbar_activity_selected.png" android:layout_centerInParent="true" />
+		</RelativeLayout>
+		<TextView android:textSize="18dp" android:textColor="cccccc" android:layout_gravity="17" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Double toolbar" />
+	</LinearLayout>
+</merge>

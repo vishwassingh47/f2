@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:orientation="1" android:scrollbars="512" android:layout_width="-1" android:layout_height="-2">
+		<ScrollView android:id="false" android:layout_width="-1" android:layout_height="-2">
+			<LinearLayout android:gravity="17" android:orientation="1" android:paddingTop="5dp" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1">
+				<LinearLayout android:orientation="1" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="-1" android:layout_height="-1">
+					<LinearLayout android:orientation="1" android:paddingTop="15dp" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="3dp" android:layout_marginRight="3dp">
+						<EditText android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" style="@style/editInputText" />
+						<RadioGroup android:orientation="0" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp">
+							<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:checked="true" android:button="res/drawable/radio_button_drawable.xml" android:text="zip" />
+							<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" android:text="7z" />
+							<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" android:text="gz" />
+						</RadioGroup>
+					</LinearLayout>
+					<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="3dp" android:layout_marginTop="12dp" android:layout_marginRight="3dp">
+						<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Compress level:" />
+						<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="-1" android:layout_height="48dp" android:layout_marginTop="12dp">
+							<Button android:textColor="ffffffff" android:gravity="19" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:text="Unicode(UTF-8)" android:layout_centerVertical="true" />
+						</LinearLayout>
+					</LinearLayout>
+					<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="3dp" android:layout_marginTop="12dp" android:layout_marginRight="3dp" android:layout_marginBottom="12dp">
+						<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:text="Password" />
+						<EditText android:textSize="21dp" android:textColor="ffffffff" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="12dp" android:hint="Letters and numbers" android:inputType="129" style="@style/editInputText" />
+						<CheckBox android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Show password" />
+						<CheckBox android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="Delete the source file" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout android:orientation="1" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1">
+			<include layout="@layout/archive_progress_dialog" />
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

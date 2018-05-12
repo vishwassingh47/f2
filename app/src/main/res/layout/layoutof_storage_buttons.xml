@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--Horizontal Views        layer 2-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:background="@color/theme1_grey"
+    android:id="@+id/storageButtonsLayer"
+    >
+    <ImageView
+    android:padding="1dp"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/storageButton1"
+    android:src="@drawable/sd_card"
+    android:visibility="gone"
+    android:tint="#000000"
+    />
+
+    <ImageView
+    android:padding="1dp"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/storageButton2"
+    android:src="@drawable/sd_card"
+    android:visibility="gone"
+    android:tint="#ffcdd2"
+    />
+
+    <ImageView
+    android:padding="1dp"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/storageButton3"
+    android:src="@drawable/sd_card"
+    android:visibility="gone"
+    android:tint="#bbdefb"
+    />
+
+    <ImageView
+    android:padding="1dp"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/storageButton4"
+    android:src="@mipmap/google_drive"
+    android:visibility="gone"
+    />
+
+    <ImageView
+    android:padding="1dp"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:id="@+id/storageButton5"
+    android:src="@mipmap/dropbox"
+    android:visibility="gone"
+    />
+
+
+
+</LinearLayout>

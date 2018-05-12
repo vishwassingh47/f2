@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" android:scaleType="3" android:minWidth="200dp">
+	<View android:layout_width="-1" android:layout_height="30dp" />
+	<LinearLayout android:gravity="5" android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="2dp">
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+		<TextView android:textColor="ffffffff" android:layout_width="-2" android:layout_height="-2" android:text="/" />
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" />
+	</LinearLayout>
+	<TextView android:textColor="ffffffff" android:ellipsize="3" android:gravity="3" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="Please wait…" android:singleLine="true" />
+	<ProgressBar android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginTop="8dp" android:layout_marginRight="6dp" style="@style/HorizontalProgressBar" />
+	<LinearLayout android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" />
+		<LinearLayout android:gravity="5" android:layout_width="-1" android:layout_height="-1">
+			<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			<TextView android:textColor="ffffffff" android:layout_width="-2" android:layout_height="-2" android:text="/" />
+			<TextView android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="6dp" />
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="false" android:visibility="1" android:layout_width="-1" android:layout_height="-2">
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:text="Speed" />
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="5dp" />
+	</LinearLayout>
+	<View android:layout_width="-1" android:layout_height="18dp" />
+</LinearLayout>

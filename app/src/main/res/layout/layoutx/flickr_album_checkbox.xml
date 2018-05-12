@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="180dp">
+	<TextView android:textSize="27dp" android:textColor="ff000" android:gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="82dp" android:layout_marginLeft="15dp" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+	<CheckBox android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" android:button="res/drawable/checkbox_grid_file_drawable.xml" />
+	<RadioButton android:textColor="ff000" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" android:button="res/drawable/radio_button_drawable.xml" />
+</LinearLayout>

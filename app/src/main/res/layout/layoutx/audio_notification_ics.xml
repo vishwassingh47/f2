@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:orientation="0" android:layout_width="-1" android:layout_height="64dp">
+	<ImageView android:id="false" android:background="res/drawable-hdpi-v4/app_audio_album_default_bg.9.png" android:padding="4dp" android:layout_width="64dp" android:layout_height="64dp" android:src="res/drawable-hdpi-v4/app_audio_album_default_icon.png" android:scaleType="7" />
+	<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+		<LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="16dp" android:ellipsize="4" android:gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="-1" android:layout_marginLeft="12dp" android:text="Content Title" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+			<LinearLayout android:gravity="17" android:layout_width="48dp" android:layout_height="-1">
+				<ImageButton android:id="false" android:background="res/drawable/notification_item_bg.xml" android:padding="8dp" android:layout_width="-1" android:layout_height="-1" android:src="res/drawable-hdpi-v4/app_audio_notification_close.png" android:scaleType="7" android:cropToPadding="true" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="0" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="-1" android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="{4:1065353216}">
+			<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<ImageButton android:id="false" android:background="res/drawable/notification_item_bg.xml" android:layout_width="-1" android:layout_height="-1" android:src="res/drawable-hdpi-v4/app_audio_notification_pre.png" android:scaleType="7" />
+			</LinearLayout>
+			<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<ImageButton android:id="false" android:background="res/drawable/notification_item_bg.xml" android:layout_width="-1" android:layout_height="-1" android:src="res/drawable-hdpi-v4/app_audio_notification_pause.png" android:scaleType="7" />
+			</LinearLayout>
+			<LinearLayout android:gravity="17" android:layout_width="0dp" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+				<ImageButton android:id="false" android:background="res/drawable/notification_item_bg.xml" android:layout_width="-1" android:layout_height="-1" android:src="res/drawable-hdpi-v4/app_audio_notification_next.png" android:scaleType="7" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

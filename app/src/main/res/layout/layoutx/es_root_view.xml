@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.estrongs.android.pop.view.ESRootView xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:background="res/drawable-hdpi-v4/blank.png" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:id="false" android:background="0000" android:layout_width="-1" android:layout_height="-1" />
+	<com.estrongs.android.widget.FullScrnVideoLayout android:id="false" android:background="0000" android:layout_width="-1" android:layout_height="-1" />
+	<com.estrongs.android.ui.guesture.ESGesturePanel android:orientation="0" android:id="false" android:background="0000" android:layout_width="-1" android:layout_height="-1" />
+	<View android:layout_gravity="3" android:id="false" android:background="res/drawable-hdpi-v4/drawer_slide_left.9.png" android:visibility="1" android:layout_width="7dp" android:layout_height="-1" />
+	<View android:layout_gravity="5" android:id="false" android:background="res/drawable-hdpi-v4/drawer_slide_right.9.png" android:visibility="1" android:layout_width="7dp" android:layout_height="-1" />
+</com.estrongs.android.pop.view.ESRootView>

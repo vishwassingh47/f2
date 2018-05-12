@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="16" android:paddingLeft="8dp" android:paddingRight="{2:16842851}" android:layout_width="-1" android:layout_height="-2" android:baselineAligned="false" android:minHeight="{2:16842829}">
+	<LinearLayout android:gravity="17" android:orientation="0" android:layout_width="-2" android:layout_height="-1" android:minWidth="0dp">
+		<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="17" android:id="resourceId:0x1020006" android:paddingRight="8dp" android:layout_width="-2" android:layout_height="-2" android:minWidth="48dp" />
+	</LinearLayout>
+	<RelativeLayout android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="-2" android:layout_height="-2" android:layout_weight="{4:1065353216}">
+		<TextView android:textAppearance="{2:16842817}" android:ellipsize="4" android:id="resourceId:0x1020016" android:fadingEdge="4096" android:layout_width="-2" android:layout_height="-2" android:singleLine="true" />
+		<TextView android:textAppearance="{2:16842818}" android:textColor="{2:16842808}" android:id="resourceId:0x1020010" android:layout_width="-2" android:layout_height="-2" android:maxLines="10" android:layout_below="resourceId:0x1020016" android:layout_alignLeft="resourceId:0x1020016" />
+	</RelativeLayout>
+	<LinearLayout android:gravity="17" android:orientation="1" android:id="resourceId:0x1020018" android:layout_width="-2" android:layout_height="-1" android:minWidth="48dp" />
+</LinearLayout>

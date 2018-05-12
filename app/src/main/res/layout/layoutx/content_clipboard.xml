@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_weight="{4:1065353216}">
+	<ScrollView android:layout_width="-1" android:layout_height="-1">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" />
+	</ScrollView>
+	<com.estrongs.android.pop.esclasses.ESImageView android:layout_width="-1" android:layout_height="-1" />
+</RelativeLayout>

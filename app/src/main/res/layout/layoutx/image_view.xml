@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:layout_width="-1" android:layout_height="-1">
+		<com.estrongs.android.widget.RealViewSwitcher android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+		<include android:id="false" android:layout_width="-1" android:layout_height="-1" layout="@layout/progressbar" />
+	</FrameLayout>
+	<TextView android:gravity="17" android:id="false" android:background="000" android:visibility="1" android:layout_width="-1" android:layout_height="-1" android:layout_alignParentTop="true" />
+	<LinearLayout android:gravity="16" android:id="false" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="-1" android:layout_height="63dp">
+		<LinearLayout android:orientation="1" android:layout_width="0dp" android:layout_height="-1" android:layout_marginLeft="8dp" android:layout_weight="{4:1065353216}">
+			<TextView android:textSize="18dp" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-2" android:layout_height="0dp" android:text="(0/0)" android:singleLine="true" android:layout_weight="{4:1056964608}" />
+			<TextView android:textSize="18dp" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="-2" android:layout_height="0dp" android:text="" android:singleLine="true" android:layout_weight="{4:1056964608}" />
+		</LinearLayout>
+		<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:nextFocusLeft="false" android:layout_width="75dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_websearch.png" android:scaleType="7" />
+		</LinearLayout>
+		<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:visibility="2" android:nextFocusLeft="false" android:layout_width="75dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_local_play.png" android:scaleType="7" />
+		</LinearLayout>
+		<LinearLayout android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:focusable="true" android:nextFocusLeft="false" android:layout_width="75dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_menu_collapse.png" android:scaleType="7" />
+		</LinearLayout>
+	</LinearLayout>
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:focusable="false" android:visibility="1" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable/btn_camera_arrow_left.xml" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:focusable="false" android:visibility="1" android:clickable="true" android:layout_width="-2" android:layout_height="-2" android:src="res/drawable/btn_camera_arrow_right.xml" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+	<com.estrongs.android.pop.app.imageviewer.ESGallery android:gravity="16" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" />
+	<com.estrongs.android.pop.esclasses.ESScrollMenuView android:id="false" android:background="res/drawable-hdpi-v4/toolbar_edit_more_bg.9.png" android:padding="8dp" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:layout_below="false" android:layout_alignParentRight="true">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+	</com.estrongs.android.pop.esclasses.ESScrollMenuView>
+	<com.estrongs.android.pop.esclasses.ESScrollMenuView android:id="false" android:background="res/drawable-hdpi-v4/toolbar_edit_more_bg.9.png" android:padding="5dp" android:visibility="1" android:layout_width="-2" android:layout_height="-2" android:layout_below="false" android:layout_alignParentRight="true">
+		<LinearLayout android:orientation="1" android:id="false" android:layout_width="-2" android:layout_height="-1" />
+	</com.estrongs.android.pop.esclasses.ESScrollMenuView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-2">
+	<RelativeLayout android:id="false" android:background="d1202733" android:layout_width="-1" android:layout_height="60dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+		<TextView android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:text="Associate app to show app icon on folder" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+	</RelativeLayout>
+	<CheckBox android:enabled="true" android:textColor="ff000" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginBottom="10dp" android:checked="true" android:button="res/drawable/popupbox_checkbox_drawable.xml" android:text="Upload your choice anonymously" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+	<ListView android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="10dp" android:divider="1affffff" android:dividerHeight="1dp" android:layout_above="false" android:layout_below="false" />
+	<ProgressBar android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

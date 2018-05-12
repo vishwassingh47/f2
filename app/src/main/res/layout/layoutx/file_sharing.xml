@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="false" android:fitsSystemWindows="true" android:layout_width="-1" android:layout_height="-1">
+	<FrameLayout android:id="false" android:layout_width="-1" android:layout_height="-1" android:layout_below="false">
+		<ListView android:id="false" android:layout_width="-1" android:layout_height="-2" android:listSelector="res/drawable/content_listview_selector.xml" android:cacheColorHint="0000" android:divider="res/drawable-hdpi-v4/toolbar_search_sp.9.png" />
+		<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:layout_width="-1" android:layout_height="-1" android:text="Cannot find the device, you might refresh" />
+	</FrameLayout>
+	<com.estrongs.android.pop.esclasses.ESImageView android:background="res/drawable/shadow_tools_top.xml" android:layout_width="-1" android:layout_height="-2" android:layout_below="false" />
+	<com.estrongs.android.pop.esclasses.ESImageView android:background="res/drawable/shadow_tools_bottom.xml" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentBottom="true" />
+	<ProgressBar android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="4dp" android:layout_alignParentTop="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</RelativeLayout>

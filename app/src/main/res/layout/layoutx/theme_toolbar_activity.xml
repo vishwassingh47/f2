@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="17" android:orientation="1" android:background="res/drawable-hdpi-v4/theme_toolbar_activity_bg.9.png" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="22dp" android:layout_marginRight="22dp">
+	<TextView android:textSize="27dp" android:textColor="ffffff" android:gravity="17" android:id="false" android:layout_width="-2" android:layout_height="67dp" android:layout_marginLeft="22dp" android:text="Set layout" />
+	<View android:background="1affffff" android:layout_width="-1" android:layout_height="1px" />
+	<RelativeLayout android:paddingLeft="30dp" android:paddingTop="15dp" android:paddingRight="30dp" android:paddingBottom="30dp" android:layout_width="-1" android:layout_height="-1">
+		<include android:layout_width="-2" android:layout_height="-2" android:layout_alignParentTop="true" layout="@layout/theme_toolbar_activity_include" />
+		<Button android:textSize="27dp" android:textColor="ffffffff" android:gravity="17" android:id="false" android:background="res/drawable/button_highlight_bg.xml" android:layout_width="-1" android:layout_height="67dp" android:layout_marginTop="30dp" android:text="OK" android:layout_below="false" />
+		<TextView android:textSize="18dp" android:textColor="cccccc" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="15dp" android:text="Toolbar Style can also be changed in Theme-Edit-Set layout." android:layout_below="false" />
+	</RelativeLayout>
+</LinearLayout>

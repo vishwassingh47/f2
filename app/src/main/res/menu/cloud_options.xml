@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cloud_options_Refresh"
+        android:icon="@mipmap/refresh"
+        android:title="Refresh"/>
+    <item
+        android:id="@+id/cloud_options_Logout"
+        android:icon="@mipmap/remove"
+        android:title="Log Out"/>
+
+
+
+</menu>

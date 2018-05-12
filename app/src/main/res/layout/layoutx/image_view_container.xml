@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="-1" android:layout_height="-1">
+	<com.estrongs.android.pop.app.imageviewer.ImageViewTouch android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1" />
+	<include android:id="false" android:layout_width="-1" android:layout_height="-1" layout="@layout/progressbar" />
+	<include android:id="false" android:visibility="2" android:layout_width="-1" android:layout_height="-1" layout="@layout/image_view_error" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="17" android:orientation="0" android:paddingLeft="4dp" android:paddingRight="4dp" android:scrollbars="512" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="2dp">
+	<com.estrongs.android.pop.esclasses.ESImageView android:layout_gravity="48" android:background="res/drawable-hdpi-v4/fast_sd.png" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="8dp" />
+	<TableLayout android:padding="8dp" android:layout_width="-1" android:layout_height="-2" android:stretchColumns="1">
+		<TableRow>
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:layout_gravity="16" android:id="false" android:layout_span="2" android:text="No enough space!" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="5" android:text="Required space:" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" />
+		</TableRow>
+		<TableRow android:paddingTop="4dp">
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:gravity="5" android:text="Available space:" />
+			<TextView android:textSize="21dp" android:textColor="ffffffff" android:id="false" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

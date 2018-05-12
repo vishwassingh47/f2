@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <!--layer1-->
+    <include layout="@layout/layoutof_layer1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="SEARCH IN :  /sdcard/0"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:id="@+id/gallery_searchWhere"
+        android:textColor="#fbc02d"
+            />
+
+    <!--Horizontal Views        layer 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/gallery1_layer2"
+        >
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_storage1"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#000000"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_storage2"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#ffcdd2"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_storage3"
+            android:src="@drawable/sd_card"
+            android:visibility="gone"
+            android:tint="#bbdefb"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_storage4"
+            android:src="@mipmap/google_drive"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:padding="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/gallery_storage5"
+            android:src="@mipmap/dropbox"
+            android:visibility="gone"
+            />
+
+
+
+    </LinearLayout>
+
+    <!--progress-->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/gallery_progress"
+        android:max="100"
+        android:indeterminateOnly="true"
+        />
+
+    <GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid_image_gallery"
+        android:layout_margin="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:gravity="fill"
+    />
+
+    <!--art layout-->
+    <include layout="@layout/layoutof_art_layout"/>
+
+</LinearLayout>

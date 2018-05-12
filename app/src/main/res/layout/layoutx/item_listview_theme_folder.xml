@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="0" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="-1" android:layout_height="-2">
+	<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="15dp" />
+	<TextView android:textSize="27dp" android:textColor="res/color/color_text_preference.xml" android:gravity="19" android:id="false" android:paddingLeft="12dp" android:layout_width="0dp" android:layout_height="90dp" android:text="Set Background Image" android:layout_weight="{4:1065353216}" />
+	<RadioButton android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="15dp" android:button="res/drawable/radio_button_drawable.xml" />
+</LinearLayout>

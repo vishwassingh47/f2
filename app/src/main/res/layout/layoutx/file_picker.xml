@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="1" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="-1" android:layout_height="-1">
+	<LinearLayout android:gravity="16" android:orientation="0" android:id="false" android:focusableInTouchMode="false" android:layout_width="-1" android:layout_height="67dp">
+		<LinearLayout android:gravity="17" android:id="false" android:focusable="true" android:layout_width="67dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_return.png" android:scaleType="5" />
+		</LinearLayout>
+		<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:visibility="2" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="2dp" />
+		<TextView android:textAppearance="{2:16842817}" android:textSize="21dp" android:textColor="ffffffff" android:ellipsize="3" android:gravity="16" android:id="false" android:layout_width="0dp" android:layout_height="45dp" android:singleLine="true" android:layout_weight="{4:1065353216}" />
+		<LinearLayout android:gravity="17" android:id="false" android:focusable="true" android:layout_width="67dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_new.png" android:scaleType="5" />
+		</LinearLayout>
+		<LinearLayout android:gravity="17" android:id="false" android:focusable="true" android:layout_width="67dp" android:layout_height="-1">
+			<com.estrongs.android.pop.esclasses.ESImageView android:id="false" android:layout_width="36dp" android:layout_height="36dp" android:src="res/drawable-hdpi-v4/toolbar_sort.png" android:scaleType="5" />
+		</LinearLayout>
+	</LinearLayout>
+	<View android:background="res/drawable-hdpi-v4/toolbar_search_sp.9.png" android:layout_width="-1" android:layout_height="1dp" />
+	<FrameLayout android:id="false" android:layout_width="-1" android:layout_height="0dp" android:layout_weight="{4:1065353216}">
+		<FrameLayout android:gravity="17" android:layout_width="-1" android:layout_height="-1">
+			<TextView android:textColor="ffcccccc" android:gravity="17" android:layout_gravity="17" android:id="resourceId:0x1020004" android:layout_width="-1" android:layout_height="-1" android:text="Empty Folder" />
+			<android.support.v7.widget.RecyclerView android:id="false" android:scrollbars="512" android:layout_width="-1" android:layout_height="-1" />
+			<LinearLayout android:gravity="17" android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-1">
+				<ProgressBar android:layout_width="-2" android:layout_height="-2" style="@style/ProgressBar" />
+				<TextView android:textColor="ffcccccc" android:id="false" android:layout_width="-2" android:layout_height="-2" />
+			</LinearLayout>
+		</FrameLayout>
+	</FrameLayout>
+</LinearLayout>

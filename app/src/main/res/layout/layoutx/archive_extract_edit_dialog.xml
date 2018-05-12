@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="-1" android:layout_height="-2">
+	<LinearLayout android:orientation="1" android:paddingLeft="10dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-2">
+		<RadioGroup android:orientation="1" android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_marginTop="10dp">
+			<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:checked="true" android:button="res/drawable/radio_button_drawable.xml" android:text="test/" />
+			<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" android:text="Current path" />
+			<RadioButton android:textSize="24dp" android:textColor="ffffffff" android:id="false" android:layout_width="-2" android:layout_height="-2" android:button="res/drawable/radio_button_drawable.xml" android:text="Choose path" />
+		</RadioGroup>
+		<EditText android:textColor="ffffffff" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_input_bg.9.png" android:focusable="false" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="2dp" android:layout_marginRight="6dp" android:layout_marginBottom="3dp" android:maxLines="1" android:ems="25" android:scrollHorizontally="true" android:singleLine="true" android:autoText="true" android:inputType="4097" />
+		<TextView android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="Password" />
+		<EditText android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="6dp" android:layout_marginTop="2dp" android:layout_marginRight="6dp" android:layout_marginBottom="3dp" android:maxLines="1" android:ems="25" android:scrollHorizontally="true" android:singleLine="true" android:capitalize="1" android:autoText="true" android:inputType="129" />
+		<CheckBox android:textColor="ffffffff" android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="Show password" />
+		<View android:layout_width="-1" android:layout_height="15dp" />
+		<LinearLayout android:gravity="19" android:id="false" android:background="res/drawable-hdpi-v4/popupbox_select_bg.9.png" android:layout_width="-1" android:layout_height="48dp" android:layout_marginRight="6dp">
+			<Button android:textColor="ffffffff" android:gravity="17" android:id="false" android:background="res/drawable/background_globle_buttons.xml" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="-1" android:layout_height="-1" android:text="Unicode(UTF-8)" />
+		</LinearLayout>
+		<CheckBox android:id="false" android:visibility="2" android:layout_width="-2" android:layout_height="-2" android:text="Not ask any more" />
+		<View android:layout_width="-1" android:layout_height="15dp" />
+	</LinearLayout>
+</ScrollView>

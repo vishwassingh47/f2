@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="resourceId:0x1020018" android:paddingLeft="24dp" android:paddingTop="14dp" android:paddingRight="20dp" android:paddingBottom="14dp" android:layout_width="-1" android:layout_height="-2">
+	<TextView android:textSize="24dp" android:typeface="1" android:textStyle="0" android:textColor="ffffff" android:id="resourceId:0x1020016" android:layout_width="-1" android:layout_height="-2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+	<TextView android:textSize="18dp" android:id="resourceId:0x1020010" android:layout_width="-1" android:layout_height="-2" android:layout_below="resourceId:0x1020016" android:layout_alignParentLeft="true" />
+	<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_below="resourceId:0x1020016" android:layout_alignParentRight="true" />
+	<TextView android:gravity="5" android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_toLeftOf="false" android:layout_below="resourceId:0x1020016" />
+	<TextView android:id="false" android:layout_width="-2" android:layout_height="-2" android:layout_toLeftOf="false" android:layout_below="resourceId:0x1020016" />
+	<LinearLayout android:id="false" android:layout_width="-1" android:layout_height="-2" android:layout_below="resourceId:0x1020010" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

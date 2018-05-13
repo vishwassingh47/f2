@@ -51,6 +51,7 @@ import com.example.sahil.f2.OperationTheater.BackgroundInstallUninstallMachine;
 import com.example.sahil.f2.OperationTheater.DeletingMachine;
 import com.example.sahil.f2.OperationTheater.FastDownload;
 import com.example.sahil.f2.OperationTheater.Favourites;
+import com.example.sahil.f2.OperationTheater.HelpingBot;
 import com.example.sahil.f2.OperationTheater.HidingUnhidingMachine;
 import com.example.sahil.f2.OperationTheater.PagerXUtilities;
 import com.example.sahil.f2.OperationTheater.PasteClipBoard;
@@ -789,7 +790,7 @@ public class ClickManager
 
     private void openNewPager(MyContainer container)    //pager id =3
     {
-        Log.e("OOPEN INNER","--"+container.getName());
+        Log.e("OPEN INNER","--"+container.getName());
         image_gallery_fragment1 pager3=(image_gallery_fragment1) fragment;
         pager3.openInnerPager(container);
     }
@@ -819,39 +820,6 @@ public class ClickManager
             PasteClipBoard.fromStorageCode=storageId;
 
 
-            if(PasteClipBoard.cutOrCopy==1)
-            {
-                OneFile oneFile=new OneFile(currentPath,mainActivityObject);
-                if(oneFile.isJavaFile() && PagerXUtilities.isExternalSdCardPath(currentPath) && !oneFile.isCanWrite())
-                {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                    {
-                        String storagePath=PagerXUtilities.getExternalSdCardPath(currentPath);
-                        if(SDCardUriMap.get(storagePath)==null)
-                        {
-                            StorageAccessFramework storageAccessFramework=new StorageAccessFramework(mainActivityObject);
-                            storageAccessFramework.showSaf(2,storagePath);
-                            PasteClipBoard.clear();
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        //media store hack
-                    }
-                }
-                else
-                {
-                    if(!SuperUser.hasUserEnabledSU)
-                    {
-                        Toast.makeText(mainActivityObject, "Root access required", Toast.LENGTH_SHORT).show();
-                        PasteClipBoard.clear();
-                        return;
-                    }
-                }
-            }
-
-
             final Dialog dialog1=new Dialog(mainActivityObject);
             dialog1.requestWindowFeature(Window.FEATURE_NO_TITLE);
             dialog1.setContentView(R.layout.layoutof_waiting1);
@@ -879,7 +847,6 @@ public class ClickManager
                 @Override
                 public void run()
                 {
-
                     for (Integer itemo : selectedIndexList)
                     {
                         if(pagerId==3)

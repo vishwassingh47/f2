@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
-import android.support.v4.provider.DocumentFile;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
@@ -83,7 +82,6 @@ public class CopyService1 extends Service
     @Override
     public int onStartCommand(Intent intent, int flags, final int startid)
     {
-
         Log.i(TAG,"service called");
 
         helpingBot=new HelpingBot();
@@ -214,7 +212,6 @@ public class CopyService1 extends Service
         final int startIndex= copyData.currentFileIndex;
 
 
-
         String toParentPath=copyData.toRootPath;
 
         //IF TO ROOT FOLDER DOES NOT EXIST CREATE IT
@@ -224,8 +221,7 @@ public class CopyService1 extends Service
             createNewUtils.createInLocal(toParentPath,true,false);
         }
 
-
-        Log.e("TAG",copyData.totalFiles+"--"+startIndex+"--"+toParentPath);
+        Log.e(TAG,copyData.totalFiles+"--"+startIndex+"--"+toParentPath);
 
         for(int i = startIndex; i< copyData.totalFiles; i++)
         {
@@ -677,7 +673,6 @@ public class CopyService1 extends Service
     }
 
 
-
     private void setProgress()
     {
         if(copyData.totalSizeToDownload==0)
@@ -752,8 +747,6 @@ public class CopyService1 extends Service
             return false;
         }
     }
-
-
 
     private void notifyMessage(String message,boolean vibrate)
     {

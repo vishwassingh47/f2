@@ -69,7 +69,6 @@ public class CreateNewUtils
             else
             {
                 //MEDIA STORE HACK
-
             }
         }
         return false;

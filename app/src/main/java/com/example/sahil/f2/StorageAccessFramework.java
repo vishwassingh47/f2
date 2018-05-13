@@ -122,8 +122,8 @@ public class StorageAccessFramework
                 WHAT DO YOU WANT TO DO NEXT
 
                 ***SDCARD1****
-                1.COPYING
-                2.CUT
+                1.from CUT AND TO PASTE
+
                 3.DELETE
                 4.Rename
                 5.CREATE
@@ -141,10 +141,6 @@ public class StorageAccessFramework
                     if(whyDocumentTreeIntent==1)
                     {
                         mainActivity.pasteButtonDecisionMaker.pasteButton.performClick();
-                    }
-                    if(whyDocumentTreeIntent==2)
-                    {
-                        //do nothing user hsave to select files again to cut
                     }
                     if(whyDocumentTreeIntent==3)
                     {

@@ -44,6 +44,7 @@ import org.w3c.dom.Text;
 import java.io.File;
 import java.io.IOException;
 
+import static com.example.sahil.f2.MainActivity.SDCardUriMap;
 import static com.example.sahil.f2.OperationTheater.PagerXUtilities.getExternalSdCardPath;
 import static com.example.sahil.f2.OperationTheater.PagerXUtilities.getFrameIdFromPageIndex;
 import static com.example.sahil.f2.OperationTheater.PagerXUtilities.getStorageIdFromPageName;
@@ -311,6 +312,103 @@ public class PasteButtonDecisionMaker
                 //Toast.makeText(mainActivity, , Toast.LENGTH_LONG).show();
                 return;
             }
+
+
+            boolean safRequired=false;
+            String sdCardPath=null;
+            String path=PasteClipBoard.toRootPath;
+            if(PasteClipBoard.toStorageCode<=3)
+            {
+                final OneFile oneFile=new OneFile(path,mainActivity);
+                if(oneFile.isExist() )
+                {
+                    if(!oneFile.isCanWrite())
+                    {
+                        if(oneFile.isJavaFile() && isExternalSdCardPath(path))
+                        {
+                            sdCardPath=getExternalSdCardPath(path);
+                            safRequired=true;
+                        }
+                        else
+                        {
+                            if(!SuperUser.hasUserEnabledSU)
+                            {
+                                Toast.makeText(mainActivity, "Root Access Required", Toast.LENGTH_SHORT).show();
+                                //showPasteMenu();
+                                return;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    Toast.makeText(mainActivity, "Cannot paste here,this path does not exist", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            }
+
+            if(safRequired)
+            {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                {
+                    if(MainActivity.SDCardUriMap.get(sdCardPath)==null)
+                    {
+                        StorageAccessFramework storageAccessFramework=new StorageAccessFramework(mainActivity);
+                        storageAccessFramework.showSaf(1,sdCardPath);
+                        return;
+                    }
+                }
+                else
+                {
+                    //media store hack
+                }
+            }
+
+            safRequired=false;
+
+            path=PasteClipBoard.pathList.get(0);
+            if(PasteClipBoard.fromStorageCode<=3 && PasteClipBoard.cutOrCopy ==1)
+            {
+                final OneFile oneFile=new OneFile(path,mainActivity);
+                if(oneFile.isExist() )
+                {
+                    if(!oneFile.isCanWrite())
+                    {
+                        if(oneFile.isJavaFile() && isExternalSdCardPath(path))
+                        {
+                            sdCardPath=getExternalSdCardPath(path);
+                            safRequired=true;
+                        }
+                        else
+                        {
+                            if(!SuperUser.hasUserEnabledSU)
+                            {
+                                Toast.makeText(mainActivity, "Root Access Required", Toast.LENGTH_SHORT).show();
+                                //showPasteMenu();
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if(safRequired)
+            {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+                {
+                    if(MainActivity.SDCardUriMap.get(sdCardPath)==null)
+                    {
+                        StorageAccessFramework storageAccessFramework=new StorageAccessFramework(mainActivity);
+                        storageAccessFramework.showSaf(1,sdCardPath);
+                        return;
+                    }
+                }
+                else
+                {
+                    //media store hack
+                }
+            }
+
             //READY TO PASTE
             hidePasteMenu();
             //cancelButton.hide();
@@ -328,8 +426,6 @@ public class PasteButtonDecisionMaker
                 SizeFetcherAsyncTask myAsyncTask=new SizeFetcherAsyncTask(PasteClipBoard.toStorageCode);
                 myAsyncTask.execute();
             }
-
-
         }
     }
 
@@ -421,40 +517,6 @@ public class PasteButtonDecisionMaker
     // it will copy the paste data to cache and call machines
     void copyToLocal()
     {
-        final String toFolderPath=PasteClipBoard.toRootPath;
-        final OneFile oneFile=new OneFile(toFolderPath,mainActivity);
-
-
-        if(!oneFile.isCanWrite())
-        {
-            if(oneFile.isJavaFile() && oneFile.isExist() && isExternalSdCardPath(toFolderPath))
-            {
-                String sdCardPath=getExternalSdCardPath(toFolderPath);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-                {
-                    if(MainActivity.SDCardUriMap.get(sdCardPath)==null)
-                    {
-                        StorageAccessFramework storageAccessFramework=new StorageAccessFramework(mainActivity);
-                        storageAccessFramework.showSaf(1,sdCardPath);
-                        return;
-                    }
-                }
-                else
-                {
-                    //media store hack
-                }
-            }
-            else
-            {
-                if(!SuperUser.hasUserEnabledSU)
-                {
-                    Toast.makeText(mainActivity, "Root Access Required", Toast.LENGTH_SHORT).show();
-                    showPasteMenu();
-                    return;
-                }
-            }
-        }
-
 
         //FROM LOCAL STORAGE
         if(PasteClipBoard.fromStorageCode>=1 && PasteClipBoard.fromStorageCode<=3)
@@ -467,7 +529,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 copyData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 CopingMachine copingMachine=new CopingMachine(mainActivity,101);
-                copingMachine.copying();
+                copingMachine.checkSpaceAndCopy();
                 return;
             }
 
@@ -477,7 +539,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 copyData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 CopingMachine copingMachine=new CopingMachine(mainActivity,102);
-                copingMachine.copying();
+                copingMachine.checkSpaceAndCopy();
                 return;
             }
             showHidePasteButton(-1);

@@ -15,6 +15,7 @@ import java.io.InputStream;
 
 public class SexyInputStream
 {
+    private final String TAG="SexyInputStream";
     private String path;
     private InputStream inputStream=null;
     private FileInputStream fileInputStream=null;
@@ -37,11 +38,14 @@ public class SexyInputStream
 
         if(fileInputStream==null)
         {
+            Log.e(TAG,"NOT A JAVA FILE");
             inputStream=getRootInputStream(path);
         }
 
+
         isOk=fileInputStream!=null || inputStream!=null;
 
+        Log.e(TAG,"isok?:"+isOk);
     }
 
     public boolean isOk()
@@ -171,19 +175,23 @@ public class SexyInputStream
         {
             return null;
         }
-
         InputStream inputStream;
         try
         {
             final String command="cat '"+path+"'";
-
             Process process = Runtime.getRuntime().exec("su");
+            inputStream = process.getInputStream();
             DataOutputStream os = new DataOutputStream(process.getOutputStream());
             os.writeBytes(command + "\n");
             os.writeBytes("exit\n");
-            inputStream = process.getInputStream();
-            os.flush();
 
+            os.flush();
+            os.close();
+
+            return inputStream;
+
+            /*inputStream.close();
+            Log.e(TAG,"4");
             if (process.waitFor() != 0 )
             {
                 Log.e("getRootInputStream"," cmd: " + command);
@@ -191,6 +199,8 @@ public class SexyInputStream
             }
 
             return inputStream;
+
+            */
         }
         catch (Exception e)
         {

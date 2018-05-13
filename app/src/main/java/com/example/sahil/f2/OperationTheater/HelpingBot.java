@@ -1,15 +1,21 @@
 package com.example.sahil.f2.OperationTheater;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Handler;
+import android.support.v7.widget.PopupMenu;
+import android.util.Log;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 import com.example.sahil.f2.Cache.CopyData;
 import com.example.sahil.f2.Cache.MyCacheData;
+import com.example.sahil.f2.Classes.OneFile;
 import com.example.sahil.f2.Classes.Page;
 import com.example.sahil.f2.MainActivity;
 import com.example.sahil.f2.R;
 import java.io.File;
+import java.lang.reflect.Field;
 import java.util.regex.Pattern;
 
 /**
@@ -493,7 +499,36 @@ public class HelpingBot
     }
 
 
+    public PopupMenu getNicePopUpMenu(Context context, View view, int resource)
+    {
+        PopupMenu popupMenu = new PopupMenu(context, view);
+        popupMenu.inflate(resource);
 
 
+        // Force icons to show
+        Object menuHelper;
+        Class[] argTypes;
+        try
+        {
+            Field fMenuHelper = PopupMenu.class.getDeclaredField("mPopup");
+            fMenuHelper.setAccessible(true);
+            menuHelper = fMenuHelper.get(popupMenu);
+            argTypes = new Class[] { boolean.class };
+            menuHelper.getClass().getDeclaredMethod("setForceShowIcon", argTypes).invoke(menuHelper, true);
+        }
+        catch (Exception e)
+        {
+            // Possible exceptions are NoSuchMethodError and NoSuchFieldError
+            //
+            // In either case, an exception indicates something is wrong with the reflection code, or the
+            // structure of the PopupMenu class or its dependencies has changed.
+            //
+            // These exceptions should never happen since we're shipping the AppCompat library in our own apk,
+            // but in the case that they do, we simply can't force icons to display, so log the error and
+            // show the menu normally.
+            Log.e("POPUP MENU", "error forcing menu icons to show", e);
+        }
 
+        return popupMenu;
+    }
 }

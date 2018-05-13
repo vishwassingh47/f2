@@ -2450,7 +2450,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.e(TAG, "GoogleApiClient connection suspended");
     }
 
-    public void showLowSpaceError(long totalSizeToDownload,long spaceAvailable)
+    public void showLowSpaceError(long required,long spaceAvailable)
     {
         final Dialog dialog0 = new Dialog(MainActivity.this);
         dialog0.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -2473,9 +2473,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
 
 
-        lowspace_clear.setText("TRY CLEARING "+ helpingBot.sizeinwords(totalSizeToDownload-spaceAvailable)+" MORE");
+        lowspace_clear.setText("TRY CLEARING "+ helpingBot.sizeinwords(required-spaceAvailable)+" MORE");
         lowspace_available.setText("AVAILABLE SPACE :"+helpingBot.sizeinwords(spaceAvailable));
-        lowspace_required.setText("REQUIRED SPACE :"+helpingBot.sizeinwords(totalSizeToDownload));
+        lowspace_required.setText("REQUIRED SPACE :"+helpingBot.sizeinwords(required));
 
         dialog0.show();
 

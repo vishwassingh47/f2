@@ -284,7 +284,7 @@ public class MainOperationClass
                         dialog.cancel();
                         copyData.getTinyDbData(tinyDB);
                         CopingMachine copingMachine=new CopingMachine(mainActivity,operationId);
-                        copingMachine.copying();
+                        copingMachine.checkSpaceAndCopy();
                     }
                     return;
                 }
@@ -353,7 +353,7 @@ public class MainOperationClass
                     tinyDB.putInt(operationId+"currentFileIndex", copyData.currentFileIndex+1);
                     copyData.getTinyDbData(tinyDB);
                     copingMachine=new CopingMachine(mainActivity,operationId);
-                    copingMachine.copying();
+                    copingMachine.checkSpaceAndCopy();
                     return;
                 }
 

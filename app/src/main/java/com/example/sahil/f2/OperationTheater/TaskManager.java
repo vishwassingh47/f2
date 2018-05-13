@@ -518,7 +518,7 @@ public class TaskManager
                             mainActivity.drawer.closeDrawer(mainActivity.navigationView2);
                             copyData.getTinyDbData(tinyDB);
                             CopingMachine copingMachine=new CopingMachine(mainActivity,operationId);
-                            copingMachine.copying();
+                            copingMachine.checkSpaceAndCopy();
                         }
                     }
                 });

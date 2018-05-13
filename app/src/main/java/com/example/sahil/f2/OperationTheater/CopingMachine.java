@@ -1,6 +1,8 @@
 package com.example.sahil.f2.OperationTheater;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +17,7 @@ import com.example.sahil.f2.HomeServicesProvider.CopyService2;
 import com.example.sahil.f2.MainActivity;
 import com.example.sahil.f2.Maintenance.TinyDB;
 import com.example.sahil.f2.R;
+import com.example.sahil.f2.Utilities.RootUtils;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -46,13 +49,8 @@ public class CopingMachine extends MainOperationClass
     IT IS CALLED WHEN copyCache1 IS ALL SET
      */
 
-
-    public void copying()
+    private void copying()
     {
-        if(!isSpaceOk(copyData.totalSizeToDownload, copyData.toRootPath))
-        {
-            return;
-        }
 
         super.setDialog(copyData.fromStorageId, copyData.toStorageId, copyData.fromRootPath, copyData.toRootPath, copyData.totalSizeToDownload, copyData.currentFileName, copyData.currentFileIndex, copyData.totalFiles, copyData.downloadedSize, copyData.progress);
 
@@ -195,28 +193,51 @@ public class CopingMachine extends MainOperationClass
 
     }
 
-
-
-    private boolean isSpaceOk(long totalSizeToDownload,String toRootPath)
+    public void checkSpaceAndCopy()
     {
-        File toRootFile=new File(toRootPath);
-        if(!toRootFile.exists())
+        class SizeFetcherAsyncTask extends AsyncTask<String, Integer, Boolean>
         {
-            boolean x=toRootFile.mkdirs();
+            private ProgressDialog pd;
+            private long free,required;
+            protected void onPreExecute()
+            {
+                super.onPreExecute();
+                pd=new ProgressDialog(mainActivity);
+                pd.setMessage("Checking available space");
+                pd.setCancelable(false);
+                pd.show();
+            }
+
+            protected Boolean doInBackground(String... arg0)
+            {
+                RootUtils rootUtils=new RootUtils();
+                free=rootUtils.getFreeSpace(copyData.toRootPath,mainActivity);
+                required=copyData.totalSizeToDownload-copyData.downloadedSize;
+                return (required<free);
+            }
+
+            @Override
+            protected void onPostExecute(Boolean result)
+            {
+                pd.cancel();
+                if(result)
+                {
+                    copying();
+                }
+                else
+                {
+                    mainActivity.showLowSpaceError(required,free);
+                }
+            }
+
         }
-        
-        if(totalSizeToDownload >= toRootFile.getUsableSpace())
-        {
-            long spaceAvailable=toRootFile.getUsableSpace();
-            mainActivity.showLowSpaceError(totalSizeToDownload,spaceAvailable);
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-        
+
+        SizeFetcherAsyncTask myAsyncTask=new SizeFetcherAsyncTask();
+        myAsyncTask.execute();
+
     }
+
+
 
 
 }

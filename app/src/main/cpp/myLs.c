@@ -291,7 +291,7 @@ void getAvailable()
     }
     else
     {
-        long long x;
+        long long  x;
         x= sfs.f_bavail*sfs.f_bsize;
         printAvailable(x);
     }

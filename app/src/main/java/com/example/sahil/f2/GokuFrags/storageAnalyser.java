@@ -1085,8 +1085,9 @@ public class storageAnalyser extends Fragment
 
         private void setUpOptions()
         {
-            android.support.v7.widget.PopupMenu popup=new PopupMenu(mainActivityObject,options);
-            popup.getMenuInflater().inflate(R.menu.popup,popup.getMenu());
+            HelpingBot helpingBot=new HelpingBot();
+            PopupMenu popup=helpingBot.getNicePopUpMenu(mainActivityObject,options,R.menu.popup);
+
             popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener()
             {
                 public boolean onMenuItemClick(MenuItem item)
@@ -1154,11 +1155,7 @@ public class storageAnalyser extends Fragment
             {
                 menu.findItem(R.id.sort).setEnabled(false);
             }
-
-            MenuPopupHelper menuHelper=new MenuPopupHelper(mainActivityObject,(MenuBuilder)menu,options);
-            menuHelper.setForceShowIcon(true);
-            menuHelper.setGravity(Gravity.END);
-            menuHelper.show();
+            popup.show();
         }
 
         private void showArtLayout(int resourceId,String message,boolean toRetry)  //OK

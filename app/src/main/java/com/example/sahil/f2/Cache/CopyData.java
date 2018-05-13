@@ -184,7 +184,7 @@ public class CopyData
                 File file=new File(currentPath);
                 if(file.exists())
                 {
-                    downloadedSize+=file.length();
+                    //downloadedSize+=file.length();
                     if(totalSizeToDownload==0)
                     {
                         progress=0;

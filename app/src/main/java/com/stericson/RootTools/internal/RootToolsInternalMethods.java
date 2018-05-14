@@ -33,6 +33,7 @@ import android.util.Log;
 
 import com.example.sahil.f2.OperationTheater.HelpingBot;
 import com.example.sahil.f2.Rooted.SuOperations;
+import com.example.sahil.f2.Utilities.CommonUtils;
 import com.stericson.RootTools.Constants;
 import com.stericson.RootShell.RootShell;
 import com.stericson.RootShell.execution.Command;
@@ -183,12 +184,14 @@ public final class RootToolsInternalMethods {
             // mount destination as rw before writing to it
             if (remountAsRw)
             {
-                RootTools.remount(destination, "RW");
+               boolean x=RootTools.remount(destination, "RW");
+                Log.e("remunted:",x+"--");
             }
 
             // if cp is available and has appropriate permissions
             if (checkUtil("cp"))
             {
+                Log.e("cp found","--");
                 RootTools.log("cp command is available!");
 
                 if (preserveFileAttributes)
@@ -199,16 +202,25 @@ public final class RootToolsInternalMethods {
 
                     //ensure that the file was copied, an exitcode of zero means success
                     result = command.getExitCode() == 0;
-
+                    Log.e("cp found","--"+result);
                 }
                 else
                 {
-                    command = new Command(0, 7200000, "cp -f '"+source+"' '"+destination+"'");
+                    command = new Command(0, 7200000, "cp -f '"+source+"' '"+destination+"'")
+                    {
+                        @Override
+                        public void commandOutput(int id, String line)
+                        {
+                            super.commandOutput(id, line);
+                            Log.e("--", "Output " + line + "--" + id);
+                        }
+                    };
                     Shell.startRootShell().add(command);
                     commandWait(Shell.startRootShell(), command);
 
                     //ensure that the file was copied, an exitcode of zero means success
                     result = command.getExitCode() == 0;
+                    Log.e("cp found","--"+result);
                 }
             }
             else
@@ -272,6 +284,7 @@ public final class RootToolsInternalMethods {
         }
         catch (Exception e)
         {
+            Log.e("errororo",e+"--");
             e.printStackTrace();
             result = false;
         }

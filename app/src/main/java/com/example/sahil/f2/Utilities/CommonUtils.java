@@ -7,9 +7,14 @@ import android.util.Log;
 
 import com.example.sahil.f2.Cache.Constants;
 import com.example.sahil.f2.Classes.CommonsUtils;
+import com.example.sahil.f2.OperationTheater.HelpingBot;
 import com.example.sahil.f2.OperationTheater.PagerXUtilities;
 import com.example.sahil.f2.Rooted.SuperUser;
 import com.example.sahil.f2.StorageAccessFramework;
+import com.stericson.RootShell.RootShell;
+import com.stericson.RootShell.execution.Command;
+import com.stericson.RootShell.execution.Shell;
+import com.stericson.RootTools.RootTools;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;

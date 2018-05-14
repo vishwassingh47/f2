@@ -372,7 +372,7 @@ public class CopyService1 extends Service
             {
                 //cp command
                 cpCommand=true;
-                if(RootTools.getInternals().copyFile(pathFrom,pathTo,true,true))
+                if(RootTools.getInternals().copyFile(pathFrom,pathTo,true,false))
                 {
                     copyData.downloadedSize+=size;
                     setProgress();
@@ -381,9 +381,6 @@ public class CopyService1 extends Service
                     {
                         notifyProgressPlease();
                     }
-
-
-
 
                     if(copyData.pauseDownloadingPlease)
                     {
@@ -671,7 +668,6 @@ public class CopyService1 extends Service
         }
         Log.i(TAG,"renaming file");
     }
-
 
     private void setProgress()
     {

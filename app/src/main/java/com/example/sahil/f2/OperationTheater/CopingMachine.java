@@ -45,6 +45,7 @@ public class CopingMachine extends MainOperationClass
         helpingBot=new HelpingBot();
     }
 
+
     /*
     IT IS CALLED WHEN copyCache1 IS ALL SET
      */
@@ -236,7 +237,6 @@ public class CopingMachine extends MainOperationClass
         myAsyncTask.execute();
 
     }
-
 
 
 

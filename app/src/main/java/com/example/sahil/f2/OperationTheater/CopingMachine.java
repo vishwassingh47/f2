@@ -17,9 +17,8 @@ import com.example.sahil.f2.HomeServicesProvider.CopyService2;
 import com.example.sahil.f2.MainActivity;
 import com.example.sahil.f2.Maintenance.TinyDB;
 import com.example.sahil.f2.R;
-import com.example.sahil.f2.Utilities.RootUtils;
+import com.example.sahil.f2.Utilities.FreeSpaceChecker;
 
-import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -44,7 +43,6 @@ public class CopingMachine extends MainOperationClass
         tinyDB=new TinyDB(mainActivity);
         helpingBot=new HelpingBot();
     }
-
 
     /*
     IT IS CALLED WHEN copyCache1 IS ALL SET
@@ -211,8 +209,8 @@ public class CopingMachine extends MainOperationClass
 
             protected Boolean doInBackground(String... arg0)
             {
-                RootUtils rootUtils=new RootUtils();
-                free=rootUtils.getFreeSpace(copyData.toRootPath,mainActivity);
+                FreeSpaceChecker freeSpaceChecker=new FreeSpaceChecker();
+                free= freeSpaceChecker.freeLocalSpace(copyData.toRootPath,mainActivity);
                 required=copyData.totalSizeToDownload-copyData.downloadedSize;
                 return (required<free);
             }
@@ -237,7 +235,5 @@ public class CopingMachine extends MainOperationClass
         myAsyncTask.execute();
 
     }
-
-
 
 }

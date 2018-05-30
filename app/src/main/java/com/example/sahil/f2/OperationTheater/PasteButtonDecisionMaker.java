@@ -416,99 +416,28 @@ public class PasteButtonDecisionMaker
             //pasteButton.hide();
             //pasteButton.setVisibility(View.GONE);
 
+            if(PasteClipBoard.toStorageCode<=3)
+            {
+                copyToLocal();
+                return;
+            }
+            if(PasteClipBoard.toStorageCode==4)
+            {
+                copyToDrive();
+                return;
+            }
+            if(PasteClipBoard.toStorageCode==5)
+            {
+                copyToDropbox();
+                return;
+            }
             if(PasteClipBoard.toStorageCode==6)
             {
                 copyToFtpServer();
                 return;
             }
-            else
-            {
-                SizeFetcherAsyncTask myAsyncTask=new SizeFetcherAsyncTask(PasteClipBoard.toStorageCode);
-                myAsyncTask.execute();
-            }
-        }
-    }
-
-
-    private class SizeFetcherAsyncTask extends AsyncTask<String, Integer, String>
-    {
-        private final int sId;
-        private ProgressDialog pd;
-        SizeFetcherAsyncTask(int sid)
-        {
-            this.sId=sid;
-        }
-        protected void onPreExecute()
-        {
-            super.onPreExecute();
-            pd=new ProgressDialog(mainActivity);
-            pd.setMessage("Checking available space");
-            pd.setCancelable(false);
-            pd.show();
-        }
-
-        protected String doInBackground(String... arg0)
-        {
-            if(sId<=3)
-            {
-
-            }
-            if(sId==4)
-            {
-                try
-                {
-                    About about = GoogleDriveConnection.m_service_client.about().get().setFields("storageQuota, user").execute();
-                    GoogleDriveConnection.totalSize = about.getStorageQuota().getLimit();
-                    GoogleDriveConnection.usedSize = about.getStorageQuota().getUsageInDrive();
-                }
-                catch(IOException e)
-                {
-                    return null;
-                }
-                catch (Exception e)
-                {
-                    return null;
-                }
-            }
-            if(sId==5)
-            {
-                try
-                {
-                    SpaceUsage spaceUsage =DropBoxConnection.mDbxClient.users().getSpaceUsage();
-                    DropBoxConnection.totalSize=spaceUsage.getAllocation().getIndividualValue().getAllocated();
-                    DropBoxConnection.usedSize=spaceUsage.getUsed();
-                }
-                catch(DbxException e)
-                {
-                    return null;
-                }
-                catch (Exception e)
-                {
-                    return null;
-                }
-            }
-            return null;
 
         }
-
-        @Override
-        protected void onPostExecute(String toPath)
-        {
-            pd.cancel();
-            if(sId<=3)
-            {
-                copyToLocal();
-            }
-            if(sId==4)
-            {
-                copyToDrive();
-            }
-            if(sId==5)
-            {
-                copyToDropbox();
-            }
-        }
-
     }
 
 
@@ -545,7 +474,6 @@ public class PasteButtonDecisionMaker
             showHidePasteButton(-1);
             Toast.makeText(mainActivity, "server too busy", Toast.LENGTH_SHORT).show();
             return;
-
         }
 
         if(PasteClipBoard.fromStorageCode==4)
@@ -559,7 +487,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,203);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -568,7 +496,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,204);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -589,7 +517,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,201);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -598,7 +526,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,202);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -617,7 +545,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,205);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -627,7 +555,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,206);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -651,7 +579,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,305);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -661,7 +589,7 @@ public class PasteButtonDecisionMaker
             {
                 downloadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,306);
-                downloadingMachine.downloading();
+                downloadingMachine.checkSpaceAndDownload();
                 return;
             }
 
@@ -690,7 +618,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 uploadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,301);
-                uploadingMachine.uploading();
+                uploadingMachine.checkSpaceAndUpload();
                 return;
             }
 
@@ -700,7 +628,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 uploadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,302);
-                uploadingMachine.uploading();
+                uploadingMachine.checkSpaceAndUpload();
                 return;
             }
 
@@ -736,7 +664,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 uploadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,303);
-                uploadingMachine.uploading();
+                uploadingMachine.checkSpaceAndUpload();
                 return;
             }
 
@@ -746,7 +674,7 @@ public class PasteButtonDecisionMaker
                 //second condrion for case when some previous task has failed with error and thus not to assign that service again to someone else
                 uploadData.getPasterDataAndResetPasterAndTinyDB(tinyDB);
                 UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,304);
-                uploadingMachine.uploading();
+                uploadingMachine.checkSpaceAndUpload();
                 return;
             }
 

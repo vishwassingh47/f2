@@ -24,4 +24,8 @@ public class Constants
     }
 
 
+    public static final String ACCEPT_WIFI_DATA="YES";
+    public static final String REJECT_WIFI_DATA="NO";
+
+
 }

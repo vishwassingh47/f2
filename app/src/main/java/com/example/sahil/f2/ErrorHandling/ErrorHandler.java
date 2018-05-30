@@ -73,6 +73,12 @@ public class ErrorHandler
 
             case 22:
                 return "Failed To Resume";
+
+            case 23:
+                return "Client Socket Error";
+
+            case 24:
+                return "Server Socket Error";
             default:
                 return "unknown error";
 

@@ -1,6 +1,8 @@
 package com.example.sahil.f2.OperationTheater;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +23,7 @@ import com.example.sahil.f2.MainActivity;
 import com.example.sahil.f2.Maintenance.TinyDB;
 import com.example.sahil.f2.R;
 import com.example.sahil.f2.UiClasses.Refresher;
+import com.example.sahil.f2.Utilities.FreeSpaceChecker;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -50,15 +53,8 @@ public class DownloadingMachine extends MainOperationClass
         helpingBot=new HelpingBot();
     }
 
-    public void downloading()  //ok
+    private void downloading()  //ok
     {
-
-        if(operationId!=305 && operationId!=306)
-        if(!isSpaceOk(downloadData.totalSizeToDownload,downloadData.downloadedSize, downloadData.toRootPath))
-        {
-            return;
-        }
-
         super.setDialog(downloadData.fromStorageId, downloadData.toStorageId, downloadData.fromRootPath, downloadData.toRootPath, downloadData.totalSizeToDownload, downloadData.currentFileName, downloadData.currentFileIndex, downloadData.totalFiles, downloadData.downloadedSize, downloadData.progress);
 
 
@@ -102,8 +98,6 @@ public class DownloadingMachine extends MainOperationClass
 
 
         super.progressListView.setAdapter(copyListAdapter);
-
-
 
 
         downloadData.runnable=new Runnable()
@@ -241,25 +235,54 @@ public class DownloadingMachine extends MainOperationClass
 
     }
 
-    private boolean isSpaceOk(long totalSizeToDownload,long downloaded,String toRootPath)
+    public void checkSpaceAndDownload()
     {
-        File toRootFile=new File(toRootPath);
-        if(!toRootFile.exists())
+        if(operationId!=305 && operationId!=306)
         {
-            boolean x=toRootFile.mkdirs();
-        }
+            class SizeFetcherAsyncTask extends AsyncTask<String, Integer, Boolean>
+            {
+                private ProgressDialog pd;
+                private long free,required;
+                protected void onPreExecute()
+                {
+                    super.onPreExecute();
+                    pd=new ProgressDialog(mainActivity);
+                    pd.setMessage("Checking available space");
+                    pd.setCancelable(false);
+                    pd.show();
+                }
 
-        if((totalSizeToDownload-downloaded) >= toRootFile.getUsableSpace())
-        {
-            long spaceAvailable=toRootFile.getUsableSpace();
-            mainActivity.showLowSpaceError(totalSizeToDownload-downloaded,spaceAvailable);
-            return false;
+                protected Boolean doInBackground(String... arg0)
+                {
+                    FreeSpaceChecker freeSpaceChecker=new FreeSpaceChecker();
+                    free= freeSpaceChecker.freeLocalSpace(downloadData.toRootPath,mainActivity);
+                    required=downloadData.totalSizeToDownload-downloadData.downloadedSize;
+                    return (required<free);
+                }
+
+                @Override
+                protected void onPostExecute(Boolean result)
+                {
+                    pd.cancel();
+                    if(result)
+                    {
+                        downloading();
+                    }
+                    else
+                    {
+                        mainActivity.showLowSpaceError(required,free);
+                    }
+                }
+
+            }
+
+            SizeFetcherAsyncTask myAsyncTask=new SizeFetcherAsyncTask();
+            myAsyncTask.execute();
         }
         else
         {
-            return true;
+            downloading();
         }
-
     }
 
 }

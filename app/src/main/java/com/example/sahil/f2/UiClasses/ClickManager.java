@@ -1,10 +1,7 @@
 package com.example.sahil.f2.UiClasses;
 
 import android.app.Dialog;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
-import android.os.Environment;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -25,19 +22,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dropbox.core.v2.files.FileMetadata;
-import com.dropbox.core.v2.files.FolderMetadata;
-import com.dropbox.core.v2.files.ListFolderResult;
-import com.dropbox.core.v2.files.Metadata;
-import com.example.sahil.f2.Cache.FtpCache;
 import com.example.sahil.f2.Cache.appManagerCache;
-import com.example.sahil.f2.Cache.variablesCache;
-import com.example.sahil.f2.Classes.DropBox.DropBoxConnection;
-import com.example.sahil.f2.Classes.DropBox.GoogleDriveConnection;
 import com.example.sahil.f2.Classes.MyApp;
 import com.example.sahil.f2.Classes.MyContainer;
 import com.example.sahil.f2.Classes.MyFile;
-import com.example.sahil.f2.Classes.OneFile;
 import com.example.sahil.f2.Classes.SimpleYesNoDialog;
 import com.example.sahil.f2.FunkyAdapters.GridViewAdapter;
 import com.example.sahil.f2.FunkyAdapters.ListViewAdapter;
@@ -51,30 +39,20 @@ import com.example.sahil.f2.OperationTheater.BackgroundInstallUninstallMachine;
 import com.example.sahil.f2.OperationTheater.DeletingMachine;
 import com.example.sahil.f2.OperationTheater.FastDownload;
 import com.example.sahil.f2.OperationTheater.Favourites;
-import com.example.sahil.f2.OperationTheater.HelpingBot;
 import com.example.sahil.f2.OperationTheater.HidingUnhidingMachine;
-import com.example.sahil.f2.OperationTheater.PagerXUtilities;
 import com.example.sahil.f2.OperationTheater.PasteClipBoard;
 import com.example.sahil.f2.OperationTheater.PropertiesMachine;
 import com.example.sahil.f2.OperationTheater.RenameMachine;
 import com.example.sahil.f2.OperationTheater.RestoringMachine;
+import com.example.sahil.f2.OperationTheater.WifiSender;
 import com.example.sahil.f2.R;
 import com.example.sahil.f2.Rooted.FolderLister;
 import com.example.sahil.f2.Rooted.SuperUser;
-import com.example.sahil.f2.StorageAccessFramework;
 import com.example.sahil.f2.Utilities.AppManagerUtils;
 import com.example.sahil.f2.Utilities.ExtensionUtil;
-import com.example.sahil.f2.WifiSendActivity;
-import com.google.api.services.drive.model.FileList;
-
-import org.apache.commons.net.ftp.FTPFile;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
-import static com.example.sahil.f2.MainActivity.SDCardUriMap;
 
 /**
  * Created by hit4man47 on 12/19/2017.
@@ -407,13 +385,13 @@ public class ClickManager
             case R.id.cab1_cut:
                 PasteClipBoard.cutOrCopy=1;
                 if(storageId<=3)
-                    myFileOperations.setUpCopyAndCut(1);
+                    myFileOperations.setUpCopyAndCut(1,false);
                 if(storageId==4)
-                    myFileOperations.setUpCopyAndCut(3);
+                    myFileOperations.setUpCopyAndCut(3,false);
                 if(storageId==5)
-                    myFileOperations.setUpCopyAndCut(2);
+                    myFileOperations.setUpCopyAndCut(2,false);
                 if(storageId==6)
-                    myFileOperations.setUpCopyAndCutFtp();
+                    myFileOperations.setUpCopyAndCut(4,false);
                 mode.finish();
                 return true;
 
@@ -422,13 +400,13 @@ public class ClickManager
                 // FAB2.show();
                 PasteClipBoard.cutOrCopy=2;
                 if(storageId<=3)
-                    myFileOperations.setUpCopyAndCut(1);
+                    myFileOperations.setUpCopyAndCut(1,false);
                 if(storageId==4)
-                    myFileOperations.setUpCopyAndCut(3);
+                    myFileOperations.setUpCopyAndCut(3,false);
                 if(storageId==5)
-                    myFileOperations.setUpCopyAndCut(2);
+                    myFileOperations.setUpCopyAndCut(2,false);
                 if(storageId==6)
-                    myFileOperations.setUpCopyAndCutFtp();
+                    myFileOperations.setUpCopyAndCut(4,false);
                 mode.finish();
                 return true;
 
@@ -523,10 +501,10 @@ public class ClickManager
             case R.id.cab1_share_wifi:
                 if(storageId<=3)
                 {
-                    myFileOperations.setUpCopyAndCut(1);
-                    Intent intent=new Intent(mainActivityObject, WifiSendActivity.class);
-                    intent.putExtra("start",true);
-                    mainActivityObject.startActivity(intent);
+                    myFileOperations.setUpCopyAndCut(1,true);
+                    //Intent intent=new Intent(mainActivityObject, WifiSendActivity.class);
+                    //intent.putExtra("start",true);
+                    //mainActivityObject.startActivity(intent);
                 }
 
                 mode.finish();
@@ -815,12 +793,13 @@ public class ClickManager
 
         /**
          *
-         * @param localOrDropBoxOrDrive
+         * @param localOrDropBoxOrDriveOrFTP
          *                  1:local
          *                  2:dropBox
          *                  3:drive
+         *                  4:FTP
          */
-        private void setUpCopyAndCut(final int localOrDropBoxOrDrive)
+        private void setUpCopyAndCut(final int localOrDropBoxOrDriveOrFTP, final boolean sendViaWifi)
         {
             someSelectedFilesMissing=false;
             PasteClipBoard.fromParentPath=currentPath;
@@ -885,16 +864,19 @@ public class ClickManager
                                 PasteClipBoard.isFolderList.add(true);
 
                                 relativeIndexOfSlash=myFile.getPath().length()-myFile.getName().length();
-                                switch (localOrDropBoxOrDrive)
+                                switch (localOrDropBoxOrDriveOrFTP)
                                 {
                                     case 1:
-                                        RecursiveLocal(myFile.getPath());
+                                        Recursive(myFile.getPath(),1);
                                         break;
                                     case 2:
-                                        RecursiveDropBox(myFile.getPath());
+                                        Recursive(myFile.getPath(),2);
                                         break;
                                     case 3:
                                         RecursiveDrive(myFile.getPath(),myFile.getName());
+                                        break;
+                                    case 4:
+                                        Recursive(myFile.getPath(),3);
                                         break;
                                 }
                             }
@@ -958,140 +940,11 @@ public class ClickManager
                             Toast.makeText(mainActivityObject, "Nothing to Copy to Clipboard", Toast.LENGTH_SHORT).show();
                         }
 
-                        dialog1.cancel();
-                        handler.removeCallbacks(runnable1);
-                    }
-                    else
-                    {
-                        textitem.setText(waittext);
-                        switch (waitimage)
+                        if(sendViaWifi)
                         {
-                            case 1:
-                                image1.setVisibility(View.VISIBLE);
-                                image2.setVisibility(View.INVISIBLE);
-                                image3.setVisibility(View.INVISIBLE);
-                                break;
-                            case 2:
-                                image1.setVisibility(View.INVISIBLE);
-                                image2.setVisibility(View.VISIBLE);
-                                image3.setVisibility(View.INVISIBLE);
-                                break;
-                            case 3:
-                                image1.setVisibility(View.INVISIBLE);
-                                image2.setVisibility(View.INVISIBLE);
-                                image3.setVisibility(View.VISIBLE);
-                                break;
+                            WifiSender wifiSender=new WifiSender(mainActivityObject);
+                            wifiSender.showWiFiDialog();
 
-                        }
-                        handler.postDelayed(runnable1,100);
-                    }
-                }
-            };
-            handler.postDelayed(runnable1,1);
-
-        }
-
-        private void setUpCopyAndCutFtp()
-        {
-            someSelectedFilesMissing=false;
-            PasteClipBoard.fromParentPath=currentPath;
-            PasteClipBoard.fromStorageCode=storageId;
-
-
-
-            final Dialog dialog1=new Dialog(mainActivityObject);
-            dialog1.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog1.setContentView(R.layout.layoutof_waiting1);
-            dialog1.setCanceledOnTouchOutside(false);
-            dialog1.setCancelable(false);
-            //dialog1.setTitle("waiting");
-            final TextView textitem=(TextView)dialog1.findViewById(R.id.wait1_item);
-            final ImageView image1=(ImageView)dialog1.findViewById(R.id.wait1_logo1);
-            final ImageView image2=(ImageView)dialog1.findViewById(R.id.wait1_logo2);
-            final ImageView image3=(ImageView)dialog1.findViewById(R.id.wait1_logo3);
-
-
-            image1.setVisibility(View.INVISIBLE);
-            image2.setVisibility(View.INVISIBLE);
-            image3.setVisibility(View.INVISIBLE);
-            textitem.setText("...");
-            dialog1.show();
-
-
-            waitimage=0;
-            waittext="";
-
-            final Thread thread=new Thread()
-            {
-                @Override
-                public void run()
-                {
-
-                    for (Integer itemo : selectedIndexList)
-                    {
-                        MyFile myFile=myFilesList.get(itemo);
-                        waittext = myFile.getName();
-
-                        if (myFile.isFolder())
-                        {
-                            relativeIndexOfSlash=myFile.getPath().length()-myFile.getName().length();
-                            RecursiveFtp(myFile.getPath());
-                        }
-                        else
-                        {
-                            PasteClipBoard.pathList.add(myFile.getPath());
-                            PasteClipBoard.nameList.add(myFile.getName());
-                            PasteClipBoard.sizeLongList.add(myFile.getSizeLong());
-                            PasteClipBoard.isFolderList.add(false);
-                        }
-                    }
-                    isThreadToLoadFilesFinished = true;
-                }
-            };
-
-
-
-            final Handler handler=new Handler();
-            waitimage=0;
-            waittext="";
-
-
-            runnable1=new Runnable()
-            {
-                @Override
-                public void run()
-                {
-                    waitimage++;
-                    if(waitimage==4)
-                    {
-                        waitimage=1;
-                    }
-                    if(!isThreadToLoadFilesStarted)
-                    {
-                        isThreadToLoadFilesStarted=true;
-                        thread.start();
-                    }
-
-                    if( isThreadToLoadFilesFinished)
-                    {
-                        if(someSelectedFilesMissing)
-                        {
-                            Toast.makeText(mainActivityObject, "Some Selected files are not copied to clipboard ,either they does not exist OR are not readable",Toast.LENGTH_LONG).show();
-                        }
-
-                        if(PasteClipBoard.nameList.size()>0)
-                        {
-                            mainActivityObject.pasteButtonDecisionMaker.showHidePasteButton(pageIndex);
-                            Toast.makeText(mainActivityObject, "Ready to Paste", Toast.LENGTH_SHORT).show();
-                            for(int i=0;i<PasteClipBoard.nameList.size();i++)
-                            {
-                                Log.e("ClipBoard",PasteClipBoard.nameList.get(i)+"----"+PasteClipBoard.isFolderList.get(i)+"-----"+PasteClipBoard.pathList.get(i)+"-------"+PasteClipBoard.sizeLongList.get(i));
-                            }
-                        }
-                        else
-                        {
-                            PasteClipBoard.clear();
-                            Toast.makeText(mainActivityObject, "Nothing to Copy to Clipboard", Toast.LENGTH_SHORT).show();
                         }
 
                         dialog1.cancel();
@@ -1182,48 +1035,6 @@ public class ClickManager
             restoringMachine.showDialog();
         }
 
-        private void RecursiveLocal(String pathToLoad)    //OKOK
-        {
-            waittext=pathToLoad;
-
-            FolderLister folderLister=new FolderLister();
-            ArrayList<MyFile> myFileArrayList=folderLister.listLocalFolder(pathToLoad);
-
-            if(myFileArrayList==null)
-            {
-                myFileArrayList=folderLister.listRootFolder(mainActivityObject,pathToLoad);
-            }
-            if(myFileArrayList==null)
-            {
-                someSelectedFilesMissing=true;
-                return;
-            }
-
-
-            for (MyFile child :myFileArrayList)
-            {
-                if(child.isFolder())
-                {
-                    String x2=child.getPath().substring(relativeIndexOfSlash);
-                    PasteClipBoard.nameList.add(x2);
-                    PasteClipBoard.pathList.add(child.getPath());
-                    PasteClipBoard.sizeLongList.add((long)0);
-                    PasteClipBoard.isFolderList.add(true);
-
-                    RecursiveLocal(child.getPath());
-                }
-                else
-                {
-                    String x2=child.getPath().substring(relativeIndexOfSlash);
-                    PasteClipBoard.nameList.add(x2);
-                    PasteClipBoard.pathList.add(child.getPath());
-                    PasteClipBoard.sizeLongList.add(child.getSizeLong());
-                    PasteClipBoard.isFolderList.add(false);
-                }
-            }
-
-        }
-
         private void RecursiveDrive(String folderId,String root)
         {
             waittext=root;
@@ -1262,12 +1073,29 @@ public class ClickManager
 
         }
 
-        private void RecursiveDropBox(String pathToLoad)
+        private void Recursive(String pathToLoad,final int localOrDropBoxOrFTP)
         {
             waittext=pathToLoad;
 
             FolderLister folderLister=new FolderLister();
-            ArrayList<MyFile> myFileArrayList=folderLister.listDropBoxFolder(pathToLoad,false);
+            ArrayList<MyFile> myFileArrayList=null;
+            switch (localOrDropBoxOrFTP)
+            {
+                case 1:
+                    myFileArrayList=folderLister.listLocalFolder(pathToLoad);
+                    if(myFileArrayList==null)
+                    {
+                        myFileArrayList=folderLister.listRootFolder(mainActivityObject,pathToLoad);
+                    }
+                    break;
+                case 2:
+                    myFileArrayList=folderLister.listDropBoxFolder(pathToLoad,false);
+                    break;
+                case 3:
+                    myFileArrayList =folderLister.listFtpFolder(pathToLoad);
+                    break;
+            }
+
 
             if(myFileArrayList==null)
             {
@@ -1286,7 +1114,7 @@ public class ClickManager
                     PasteClipBoard.sizeLongList.add((long)0);
                     PasteClipBoard.isFolderList.add(true);
 
-                    RecursiveDropBox(child.getPath());
+                    Recursive(child.getPath(),localOrDropBoxOrFTP);
                 }
                 else
                 {
@@ -1295,56 +1123,6 @@ public class ClickManager
                     PasteClipBoard.pathList.add(child.getPath());
                     PasteClipBoard.sizeLongList.add(child.getSizeLong());
                     PasteClipBoard.isFolderList.add(false);
-                }
-            }
-
-
-
-        }
-
-        private void RecursiveFtp(String folderPath)    //OKOK
-        {
-
-            String x=folderPath.substring(relativeIndexOfSlash);
-            PasteClipBoard.nameList.add(x);
-            PasteClipBoard.pathList.add(folderPath);
-            PasteClipBoard.sizeLongList.add((long)0);
-            PasteClipBoard.isFolderList.add(true);
-
-            waittext=x;
-
-            FTPFile[] filesFtp=null;
-            try
-            {
-                filesFtp= FtpCache.mFTPClient.listFiles(folderPath);
-            }
-            catch (Exception e)
-            {
-                filesFtp=null;
-            }
-
-            if(filesFtp==null)
-            {
-                someSelectedFilesMissing=true;
-            }
-            else
-            {
-                for(FTPFile child:filesFtp)
-                {
-                    String name=child.getName();
-                    String path=slashAppender(folderPath,name);
-                    if(child.isDirectory() )
-                    {
-                        RecursiveFtp(path);
-                    }
-                    else
-                    {
-                        String x2=path.substring(relativeIndexOfSlash);
-                        PasteClipBoard.nameList.add(x2);
-                        PasteClipBoard.pathList.add(path);
-                        PasteClipBoard.sizeLongList.add(child.getSize());
-                        PasteClipBoard.isFolderList.add(false);
-                    }
                 }
             }
         }
@@ -1381,6 +1159,7 @@ public class ClickManager
         }
 
     }
+
 
     private class MyAppOperations
     {
@@ -1486,4 +1265,7 @@ public class ClickManager
         else
             return a+"/"+b;
     }
+
+
+
 }

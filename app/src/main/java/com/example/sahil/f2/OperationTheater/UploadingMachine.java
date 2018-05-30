@@ -1,7 +1,9 @@
 package com.example.sahil.f2.OperationTheater;
 
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +21,7 @@ import com.example.sahil.f2.MainActivity;
 import com.example.sahil.f2.Maintenance.TinyDB;
 import com.example.sahil.f2.R;
 import com.example.sahil.f2.UiClasses.Refresher;
+import com.example.sahil.f2.Utilities.FreeSpaceChecker;
 
 import java.util.ArrayList;
 
@@ -46,13 +49,8 @@ public class UploadingMachine extends MainOperationClass
         helpingBot=new HelpingBot();
     }
 
-    public void uploading()
+    private void uploading()
     {
-        if(!isSpaceOk())
-        {
-            return;
-        }
-
         super.setDialog(uploadData.fromStorageId, uploadData.toStorageId, uploadData.fromRootPath, uploadData.toRootPath, uploadData.totalSizeToDownload, uploadData.currentFileName, uploadData.currentFileIndex, uploadData.totalFiles, uploadData.downloadedSize, uploadData.progress);
 
         progressNameList=new ArrayList<>();
@@ -211,44 +209,60 @@ public class UploadingMachine extends MainOperationClass
 
         h.postDelayed(uploadData.runnable,1000);
 
-
-
-
     }
 
-    private boolean isSpaceOk()
+    public void checkSpaceAndUpload()
     {
-        long totalSize=0;
-        long usedSize=0;
-
-        if(operationId==301|| operationId==302)
+        class SizeFetcherAsyncTask extends AsyncTask<String, Integer, Boolean>
         {
-            //dropbox upload
-            totalSize= DropBoxConnection.totalSize;
-            usedSize=DropBoxConnection.usedSize;
-        }
-        if(operationId==303 || operationId==304)
-        {
-            //google drive upload
-            totalSize= GoogleDriveConnection.totalSize;
-            usedSize=GoogleDriveConnection.usedSize;
+            private ProgressDialog pd;
+            private long free,required;
+            protected void onPreExecute()
+            {
+                super.onPreExecute();
+                pd=new ProgressDialog(mainActivity);
+                pd.setMessage("Checking available space");
+                pd.setCancelable(false);
+                pd.show();
+            }
+
+            protected Boolean doInBackground(String... arg0)
+            {
+                FreeSpaceChecker freeSpaceChecker=new FreeSpaceChecker();
+                free=0;
+                if(operationId==301 || operationId==302)
+                {
+                    //dropbox upload
+                    free= freeSpaceChecker.freeDropBoxSpace();
+                }
+                if(operationId==303 || operationId==304)
+                {
+                    //google drive upload
+                    free= freeSpaceChecker.freeDriveSpace();
+                }
+                required=uploadData.totalSizeToDownload-uploadData.downloadedSize;
+                return (required<free);
+            }
+
+            @Override
+            protected void onPostExecute(Boolean result)
+            {
+                pd.cancel();
+                if(result)
+                {
+                    uploading();
+                }
+                else
+                {
+                    mainActivity.showLowSpaceError(required,free);
+                }
+            }
         }
 
-        long available=totalSize-usedSize;
+        SizeFetcherAsyncTask myAsyncTask=new SizeFetcherAsyncTask();
+        myAsyncTask.execute();
 
-
-        long totalSizeToDownload= uploadData.totalSizeToDownload;
-        long downloadedSize=uploadData.downloadedSize;
-        if((totalSizeToDownload-downloadedSize) >= available)
-        {
-            mainActivity.showLowSpaceError(totalSizeToDownload-downloadedSize,available);
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-        
     }
+
 
 }

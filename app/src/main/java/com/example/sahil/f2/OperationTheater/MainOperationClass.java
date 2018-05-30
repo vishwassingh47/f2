@@ -246,7 +246,7 @@ public class MainOperationClass
                         dialog.cancel();
                         downloadData.getTinyDbData(tinyDB);
                         DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,operationId);
-                        downloadingMachine.downloading();
+                        downloadingMachine.checkSpaceAndDownload();
                     }
                     return;
                 }
@@ -265,7 +265,7 @@ public class MainOperationClass
                         dialog.cancel();
                         uploadData.getTinyDbData(tinyDB);
                         UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,operationId);
-                        uploadingMachine.uploading();
+                        uploadingMachine.checkSpaceAndUpload();
                     }
                     return;
                 }
@@ -331,7 +331,7 @@ public class MainOperationClass
                     tinyDB.putInt(operationId+"currentFileIndex", downloadData.currentFileIndex+1);
                     downloadData.getTinyDbData(tinyDB);
                     downloadingMachine=new DownloadingMachine(mainActivity,operationId);
-                    downloadingMachine.downloading();
+                    downloadingMachine.checkSpaceAndDownload();
                     return;
                 }
                 if(operationId>=301 && operationId<=304)
@@ -344,7 +344,7 @@ public class MainOperationClass
                     tinyDB.putInt(operationId+"currentFileIndex", uploadData.currentFileIndex+1);
                     uploadData.getTinyDbData(tinyDB);
                     uploadingMachine=new UploadingMachine(mainActivity,operationId);
-                    uploadingMachine.uploading();
+                    uploadingMachine.checkSpaceAndUpload();
                     return;
                 }
                 if(operationId==101 || operationId==102)

@@ -407,7 +407,7 @@ public class TaskManager
                             mainActivity.drawer.closeDrawer(mainActivity.navigationView2);
                             downloadData.getTinyDbData(tinyDB);
                             DownloadingMachine downloadingMachine=new DownloadingMachine(mainActivity,operationId);
-                            downloadingMachine.downloading();
+                            downloadingMachine.checkSpaceAndDownload();
                         }
                     }
                 });
@@ -463,7 +463,7 @@ public class TaskManager
                             mainActivity.drawer.closeDrawer(mainActivity.navigationView2);
                             uploadData.getTinyDbData(tinyDB);
                             UploadingMachine uploadingMachine=new UploadingMachine(mainActivity,operationId);
-                            uploadingMachine.uploading();
+                            uploadingMachine.checkSpaceAndUpload();
                         }
                     }
                 });

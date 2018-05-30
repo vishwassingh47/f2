@@ -187,6 +187,16 @@ public class HelpingBot
             case "306":
                 return R.mipmap.upload;
 
+            case "401":
+                return R.mipmap.upload;
+            case "402":
+                return R.mipmap.upload;
+
+            case "501":
+                return R.mipmap.download;
+            case "502":
+                return R.mipmap.download;
+
             default:
                 return R.mipmap.unknown;
         }
@@ -234,6 +244,15 @@ public class HelpingBot
                 return "Uploading to FTP Server 1";
             case "306":
                 return "Uploading to FTP Server 2";
+
+            case "401":
+                return "Sending Via Wifi 1";
+            case "402":
+                return "Sending via Wifi 2";
+            case "501":
+                return "Receiving via Wifi 1";
+            case "502":
+                return "Receiving via Wifi 2";
 
 
             default:
@@ -287,6 +306,17 @@ public class HelpingBot
             case 306:
                 return R.mipmap.upload;
 
+            case 401:
+                return R.mipmap.upload;
+            case 402:
+                return R.mipmap.upload;
+
+            case 501:
+                return R.mipmap.download;
+            case 502:
+                return R.mipmap.download;
+
+
 
             default:
                 return R.mipmap.unknown;
@@ -339,6 +369,14 @@ public class HelpingBot
             case 306:
                 return "Uploading to FTP Server 2";
 
+            case 401:
+                return "Sending Via Wifi 1";
+            case 402:
+                return "Sending via Wifi 2";
+            case 501:
+                return "Receiving via Wifi 1";
+            case 502:
+                return "Receiving via Wifi 2";
 
             default:
                 return "unknown Task";

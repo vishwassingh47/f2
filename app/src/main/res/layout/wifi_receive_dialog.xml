@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <!--page 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:id="@+id/page1"
+        >
+
+        <!--heading-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/main_theme_red"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you want to accept files ?"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sender Details:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sender Details:"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/md_blue_300"
+                android:id="@+id/sender_details"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Files Size:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="125 MB"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/md_blue_300"
+                android:id="@+id/totalsize"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--page 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/page2"
+        >
+
+        <!--heading-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/main_theme_red"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="File Details"
+                android:gravity="center"
+                android:layout_margin="2dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="S.No"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="File Name"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list"
+            android:background="@color/theme1_grey"
+            android:divider="#000000"
+            android:dividerHeight="1dp"
+            android:scrollbarSize="10dp"
+            android:scrollbars="vertical"
+            android:fastScrollEnabled="true"
+            android:fastScrollAlwaysVisible="true"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+
+    <!--COMMON Buttons.... -->
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/swipe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DETAILS"
+            android:textSize="14dp"
+            android:textColor="@color/progress_blue" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textSize="14dp"
+            android:textColor="@color/progress_blue" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:textSize="14dp"
+            android:textColor="@color/progress_blue"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

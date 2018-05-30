@@ -39,11 +39,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".WifiSendActivity"
-            android:screenOrientation="portrait"
-            >
-        </activity>
-
         <activity android:name=".WifiReceiveActivity"
             android:screenOrientation="portrait">
         </activity>
@@ -85,7 +80,7 @@
         <service android:name=".HomeServicesProvider.InstallService"/>
         <service android:name=".HomeServicesProvider.UnInstallService"/>
 
-        <service android:name=".HomeServicesProvider.WifiSendService"/>
+        <service android:name=".HomeServicesProvider.WiFiSendService1"/>
 
 
 

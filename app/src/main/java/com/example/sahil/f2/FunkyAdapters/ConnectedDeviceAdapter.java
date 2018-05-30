@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.sahil.f2.Classes.WiFiDevice;
 import com.example.sahil.f2.OperationTheater.HelpingBot;
 import com.example.sahil.f2.R;
 
@@ -21,16 +22,16 @@ import static android.graphics.Color.parseColor;
  * Created by hit4man47 on 8/28/2017.
  */
 
-public class ConnectedDeviceAdapter extends ArrayAdapter<String>
+public class ConnectedDeviceAdapter extends ArrayAdapter<WiFiDevice>
 {
     private Context context;
-    private ArrayList<String> nameList;
+    private ArrayList<WiFiDevice> nameList;
 
 
 
 
 
-    public ConnectedDeviceAdapter(Context context, int filetype, ArrayList<String> nameList)
+    public ConnectedDeviceAdapter(Context context, int filetype, ArrayList<WiFiDevice> nameList)
     {
         super(context,filetype,nameList);
         this.context=context;
@@ -65,9 +66,9 @@ public class ConnectedDeviceAdapter extends ArrayAdapter<String>
 
         holder.icon.setImageResource(R.mipmap.internal);
 
+        WiFiDevice wiFiDevice=nameList.get(pos);
         //SETTING  NAME
-        holder.name.setText(nameList.get(pos));
-
+        holder.name.setText(wiFiDevice.getIp()+" ("+wiFiDevice.getDeviceName()+" )");
 
         return rowView;
     }//getView closed

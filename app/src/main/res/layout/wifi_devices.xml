@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/main_theme_red"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="List of Connected Devices"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+
+            android:id="@+id/copy2_task_name"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:gravity="center"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:max="100"
+        android:indeterminateOnly="true"
+        />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/md_blue_grey_500"
+        android:id="@+id/wifi_off"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Not Connected to WiFi Or Hotspot"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/no_wifi"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/md_blue_grey_500"
+            android:text="Cancel"
+            android:layout_gravity="center"
+            android:id="@+id/cancel"
+            />
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/md_blue_grey_500"
+            android:text="Re-Scan"
+            android:layout_gravity="center"
+            android:id="@+id/rescan"
+            />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/wifi_list_view"
+        >
+
+
+    </ListView>
+
+</LinearLayout>

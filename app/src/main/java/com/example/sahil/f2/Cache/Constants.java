@@ -27,5 +27,8 @@ public class Constants
     public static final String ACCEPT_WIFI_DATA="YES";
     public static final String REJECT_WIFI_DATA="NO";
 
+    public static final int PHONE_PICKER_PORT=9234;
+    public static final int HANDSHAKE_PORT=9876;
+
 
 }

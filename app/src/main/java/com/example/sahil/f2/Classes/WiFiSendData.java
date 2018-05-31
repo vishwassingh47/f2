@@ -24,5 +24,6 @@ public class WiFiSendData
     public String errorDetails="";
     public int downloadCounter=0;
     public long oldDownloadedSize=0;
+    public String toParentPath="/sdcard/f2/wifi";
 
 }

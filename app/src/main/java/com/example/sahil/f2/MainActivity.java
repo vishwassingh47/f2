@@ -33,6 +33,7 @@ import com.example.sahil.f2.Maintenance.TinyDB;
 import com.example.sahil.f2.OperationTheater.PasteButtonDecisionMaker;
 import com.example.sahil.f2.OperationTheater.PasteClipBoard;
 import com.example.sahil.f2.OperationTheater.TaskManager;
+import com.example.sahil.f2.OperationTheater.WifiReceiver;
 import com.example.sahil.f2.Rooted.SuOperations;
 import com.example.sahil.f2.UiClasses.Drawer1;
 import com.github.clans.fab.FloatingActionButton;
@@ -167,9 +168,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     public Drawer1 drawer1;
     public FrameLayout touchBlocker;
 
-
-    private ServerSocket serverSocketPhonePicker=null,serverSocketHandShaker=null;
-
+    private WifiReceiver wifiReceiver;
     public boolean startLoginToDropbox=false;
 
     public TinyDB tinyDB;
@@ -783,8 +782,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         Log.e("oncreate end","---");
 
         showHideButtons(-1);
-        startPickingThePhone();
-        listenForHandShake();
+        wifiReceiver=new WifiReceiver(MainActivity.this);
 
     }
 
@@ -2772,220 +2770,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
     }
 
 
-    private void startPickingThePhone()
-    {
-        Thread thread=new Thread()
-        {
-            @Override
-            public void run()
-            {
-                while(true)
-                {
-                    try
-                    {
-                        Socket socket=serverSocketPhonePicker.accept();
-                        DataOutputStream  outputStream=new DataOutputStream(socket.getOutputStream());
-                        String deviceName=android.os.Build.MANUFACTURER +":"+ android.os.Build.MODEL;
-                        outputStream.writeUTF(deviceName);
-                        outputStream.flush();
-                        outputStream.close();
-                        socket.close();
-                    }
-                    catch (Exception e)
-                    {
-                    }
-                }
-
-            }
-        };
-
-        if(serverSocketPhonePicker==null)
-        {
-            try
-            {
-                serverSocketPhonePicker=new ServerSocket(9234);
-                thread.start();
-            }
-            catch (Exception e)
-            {
-                serverSocketPhonePicker=null;
-                Toast.makeText(this, "Failed to setup phone picker Server Socket", Toast.LENGTH_SHORT).show();
-            }
-        }
-        else
-        {
-            thread=null;
-        }
-
-    }
-
-    private void listenForHandShake()
-    {
-        Thread thread=new Thread()
-        {
-            @Override
-            public void run()
-            {
-                while(true)
-                {
-                    try
-                    {
-                        final Socket socket=serverSocketHandShaker.accept();
-                        ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(socket.getInputStream()));
-                        final SerializablePacket serializablePacket = (SerializablePacket) ois.readObject();
-                        for(String x: serializablePacket.nameList)
-                        {
-                           Log.e("file :",x+"--");
-                        }
-
-                        Handler mainHandler = new Handler(Looper.getMainLooper());
-                        Runnable myRunnable = new Runnable()
-                        {
-                            @Override
-                            public void run()
-                            {
-                                final Dialog dialog = new Dialog(MainActivity.this);
-                                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                dialog.setContentView(R.layout.wifi_receive_dialog);
-                                dialog.setCanceledOnTouchOutside(false);
-                                dialog.setCancelable(false);
-
-                                final TextView senderDetails,totalSize;
-                                final Button cancel,swipe,accept;
-                                final ListView listView;
-                                final LinearLayout page1,page2;
-
-                                page1=(LinearLayout)dialog.findViewById(R.id.page1);
-                                page2=(LinearLayout)dialog.findViewById(R.id.page2);
-
-                                page1.setVisibility(View.VISIBLE);
-                                page2.setVisibility(View.GONE);
-
-                                cancel=(Button)dialog.findViewById(R.id.cancel);
-                                swipe=(Button)dialog.findViewById(R.id.swipe);
-                                accept=(Button) dialog.findViewById(R.id.accept);
-
-                                senderDetails=(TextView)dialog.findViewById(R.id.sender_details);
-                                totalSize=(TextView) dialog.findViewById(R.id.totalsize);
-
-
-                                senderDetails.setText(serializablePacket.senderDeviceName+" ("+serializablePacket.senderIP+")");
-                                HelpingBot helpingBot=new HelpingBot();
-                                totalSize.setText(helpingBot.sizeinwords(serializablePacket.totalSizeToDownload));
-
-
-                                accept.setOnClickListener(new View.OnClickListener()
-                                {
-                                    @Override
-                                    public void onClick(View view)
-                                    {
-                                        Thread thread1=new Thread()
-                                        {
-                                          @Override
-                                          public void run()
-                                          {
-                                              try
-                                              {
-                                                  DataOutputStream  outputStream=new DataOutputStream(socket.getOutputStream());
-                                                  outputStream.writeUTF(Constants.ACCEPT_WIFI_DATA);
-                                                  outputStream.flush();
-                                                  Log.e("response sent to sender","--");
-                                              }
-                                              catch(Exception e)
-                                              {
-                                                  Log.e("--","Failed to send response to sender");
-                                              }
-                                          }
-                                        };
-                                        thread1.start();
-
-                                    }
-                                });
-
-
-                                cancel.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View view)
-                                    {
-                                        Thread thread1=new Thread()
-                                        {
-                                            @Override
-                                            public void run()
-                                            {
-                                                try
-                                                {
-                                                    DataOutputStream  outputStream=new DataOutputStream(socket.getOutputStream());
-                                                    outputStream.writeUTF(Constants.REJECT_WIFI_DATA);
-                                                    outputStream.flush();
-                                                    Log.e("response sent to sender","--");
-                                                }
-                                                catch(Exception e)
-                                                {
-                                                    Log.e("--","Failed to send response to sender");
-                                                }
-                                            }
-                                        };
-                                        thread1.start();
-                                        dialog.cancel();
-                                    }
-                                });
-
-
-                                dialog.show();
-
-
-                            }
-                        };
-                        mainHandler.post(myRunnable);
-
-                    }
-                    catch (Exception e)
-                    {
-                        Log.e("accccc","------"+e);
-                    }
-                }
-
-            }
-        };
-
-        if(serverSocketHandShaker==null)
-        {
-            try
-            {
-                serverSocketHandShaker=new ServerSocket(9876);
-                thread.start();
-            }
-            catch (Exception e)
-            {
-                serverSocketHandShaker=null;
-                Toast.makeText(this, "Failed to setup handshake Server Socket", Toast.LENGTH_SHORT).show();
-            }
-        }
-        else
-        {
-            thread=null;
-        }
-
-    }
-
     @Override
     public void onDestroy()
     {
         super.onDestroy();
-        try
-        {
-            serverSocketPhonePicker.close();
-        }
-        catch (Exception e)
-        {}
-        try
-        {
-            serverSocketHandShaker.close();
-        }
-        catch (Exception e)
-        {}
-        serverSocketPhonePicker=null;
-        serverSocketHandShaker=null;
+        wifiReceiver.destroy();
     }
 
 }

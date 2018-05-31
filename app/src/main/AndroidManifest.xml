@@ -81,7 +81,7 @@
         <service android:name=".HomeServicesProvider.UnInstallService"/>
 
         <service android:name=".HomeServicesProvider.WiFiSendService1"/>
-
+        <service android:name=".HomeServicesProvider.WiFiReceiveService1"/>
 
 
     </application>

@@ -79,6 +79,9 @@ public class ErrorHandler
 
             case 24:
                 return "Server Socket Error";
+
+            case 25:
+                return "Receiver rejected the files";
             default:
                 return "unknown error";
 

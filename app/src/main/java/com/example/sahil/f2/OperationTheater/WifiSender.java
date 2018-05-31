@@ -310,7 +310,6 @@ public class WifiSender
 
     private void sendHandShakePacket(final WiFiSendData wiFiSendData)
     {
-
         int tId=0;
         if(!tasksCache.tasksId.contains("401"))
         {

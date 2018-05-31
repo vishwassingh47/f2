@@ -86,7 +86,7 @@ public class WiFiSendService1 extends Service
         oldTime=0;
         try
         {
-           socket=new Socket(wiFiSendData.serializablePacket.receiverIP,9876);
+           socket=new Socket(wiFiSendData.serializablePacket.receiverIP,Constants.HANDSHAKE_PORT);
         }
         catch (Exception e)
         {
@@ -118,6 +118,26 @@ public class WiFiSendService1 extends Service
             DataInputStream dis=new DataInputStream(socket.getInputStream());
             String response=dis.readUTF();
             Log.e(TAG,"response from receiver:"+response);
+
+            if(response.equals(Constants.ACCEPT_WIFI_DATA))
+            {
+                Log.e(TAG,"response OK");
+            }
+            else
+            {
+                if(response.equals(Constants.REJECT_WIFI_DATA))
+                {
+                    notifyError(25,"");
+                    stopSelf();
+                    return;
+                }
+                else
+                {
+                    notifyError(23,"Unknown Response");
+                    stopSelf();
+                    return;
+                }
+            }
         }
         catch(Exception e)
         {
@@ -267,7 +287,7 @@ public class WiFiSendService1 extends Service
     {
         Log.i(TAG,"destroyed");
         wiFiSendData.isServiceRunning=false;//very very important
-
+        tasksCache.removeTask(operationCode+"");
         try
         {
             socket.close();
@@ -282,15 +302,12 @@ public class WiFiSendService1 extends Service
         }
         else
         {
-            tasksCache.removeTask(operationCode+"");
-
             mBuilder.setContentTitle("Transfer Complete.....")
                     .setProgress(100,100,false)
                     .setOngoing(false)
                     .setAutoCancel(true);
             mNotifyManager.notify(operationCode,mBuilder.build());
         }
-
     }
 
     private void notifyProgressPlease()

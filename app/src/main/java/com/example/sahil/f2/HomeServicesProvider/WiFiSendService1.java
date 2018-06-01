@@ -364,5 +364,4 @@ public class WiFiSendService1 extends Service
     }
 
 
-
 }

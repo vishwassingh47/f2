@@ -192,7 +192,8 @@ public class WiFiReceiveService1 extends Service
                         len=bufferedInputStream.read(buf,0,(int)Math.min(buf.length,size));
                         if(len==-1)
                         {
-                            break;
+                            notifyError(24,"failed to read from input stream");
+                            return;
                         }
                     }
                     catch (Exception e)
